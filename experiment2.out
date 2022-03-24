@@ -1,0 +1,2190 @@
+Remove the tensorboard dir
+[INFO] main.py:198 > Set the device (cuda)
+[INFO] main.py:243 > Using train-transforms Compose(
+    RandomHorizontalFlip(p=0.5)
+    RandomCrop(size=(32, 32), padding=4)
+    ToTensor()
+    Normalize(mean=(0.4914, 0.482158, 0.4465231), std=(0.247032, 0.243485, 0.2615877))
+)
+[INFO] augment.py:18 > cifar10: autoaugmentation is applied
+[INFO] main.py:266 > Using train-transforms [AutoAugment CIFAR10 Policy]
+[INFO] main.py:276 > [1] Select a CIL method (rm)
+[INFO] method_manager.py:48 > CIL Scenario: 
+n_tasks: 5
+n_init_cls: 10
+n_cls_a_task: 2
+total cls: 10
+[INFO] main.py:282 > [2] Incrementally training 5 tasks
+
+##################################################
+# Task 0 iteration
+##################################################
+
+[INFO] main.py:292 > [2-1] Prepare a datalist for the current task
+labeled train data list 800
+unlabeled train data list 10000
+noisy data list 800
+*batch 128
+-------noisy data-------
+batch_size : 10
+[WARNING] spr_main.py:69 > logs/smh already exists
+configuration:
+{'data_root': './data', 'batch_size': 10, 'num_workers': 16, 'eval_batch_size': 256, 'eval_num_workers': 4, 'batch_iter': 1, 'nb_classes': 10, 'corruption_percent': 0.4, 'asymmetric_noise': False, 'x_c': 3, 'x_h': 32, 'x_w': 32, 'y_c': 10, 'device': 'cuda', 'net': 'resnet_simclr18', 'purified_buffer_size': 200, 'purified_buffer_q_poa': 0.0, 'delayed_buffer_size': 200, 'delayed_buffer_q_poa': 0.0, 'E_max': 5, 'expert_train_epochs': 100, 'expert_batch_size': 500, 'base_train_epochs': 100, 'base_batch_size': 500, 'ft_epochs': 50, 'ft_batch_size': 16, 'use_cosine_similarity': True, 'temperature': 0.5, 'projection_out_dim': 256, 'optimizer': {'type': 'Adam', 'options': {'lr': 0.0003}}, 'lr_scheduler': {'type': 'CosineAnnealingLR', 'options': {'eta_min': 0, 'last_epoch': -1}}, 'optimizer_ft': {'type': 'Adam', 'options': {'lr': 0.002}}, 'lr_scheduler_ft': {'type': 'StepLR', 'options': {'step_size': 300, 'gamma': 0.1}}, 'clip_grad': {'type': 'value', 'options': {'clip_value': 0.5}}, 'eval': True, 'data_schedule': [{'subsets': [['cifar10', 7], ['cifar10', 6]]}, {'subsets': [['cifar10', 2], ['cifar10', 3]]}, {'subsets': [['cifar10', 0], ['cifar10', 1]]}, {'subsets': [['cifar10', 5], ['cifar10', 9]]}, {'subsets': [['cifar10', 8], ['cifar10', 4]]}], 'random_seed': 0, 'log_dir': 'logs/smh'}
+configuration end
+config & episode saved to logs/smh
+Files already downloaded and verified
+Files already downloaded and verified
+-------train SPR------
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+delay buffer full
+total_train_epoch 100 epoch_i 0
+total_train_epoch 100 epoch_i 1
+total_train_epoch 100 epoch_i 2
+total_train_epoch 100 epoch_i 3
+total_train_epoch 100 epoch_i 4
+total_train_epoch 100 epoch_i 5
+total_train_epoch 100 epoch_i 6
+total_train_epoch 100 epoch_i 7
+total_train_epoch 100 epoch_i 8
+total_train_epoch 100 epoch_i 9
+total_train_epoch 100 epoch_i 10
+total_train_epoch 100 epoch_i 11
+total_train_epoch 100 epoch_i 12
+total_train_epoch 100 epoch_i 13
+total_train_epoch 100 epoch_i 14
+total_train_epoch 100 epoch_i 15
+total_train_epoch 100 epoch_i 16
+total_train_epoch 100 epoch_i 17
+total_train_epoch 100 epoch_i 18
+total_train_epoch 100 epoch_i 19
+total_train_epoch 100 epoch_i 20
+total_train_epoch 100 epoch_i 21
+total_train_epoch 100 epoch_i 22
+total_train_epoch 100 epoch_i 23
+total_train_epoch 100 epoch_i 24
+total_train_epoch 100 epoch_i 25
+total_train_epoch 100 epoch_i 26
+total_train_epoch 100 epoch_i 27
+total_train_epoch 100 epoch_i 28
+total_train_epoch 100 epoch_i 29
+total_train_epoch 100 epoch_i 30
+total_train_epoch 100 epoch_i 31
+total_train_epoch 100 epoch_i 32
+total_train_epoch 100 epoch_i 33
+total_train_epoch 100 epoch_i 34
+total_train_epoch 100 epoch_i 35
+total_train_epoch 100 epoch_i 36
+total_train_epoch 100 epoch_i 37
+total_train_epoch 100 epoch_i 38
+total_train_epoch 100 epoch_i 39
+total_train_epoch 100 epoch_i 40
+total_train_epoch 100 epoch_i 41
+total_train_epoch 100 epoch_i 42
+total_train_epoch 100 epoch_i 43
+total_train_epoch 100 epoch_i 44
+total_train_epoch 100 epoch_i 45
+total_train_epoch 100 epoch_i 46
+total_train_epoch 100 epoch_i 47
+total_train_epoch 100 epoch_i 48
+total_train_epoch 100 epoch_i 49
+total_train_epoch 100 epoch_i 50
+total_train_epoch 100 epoch_i 51
+total_train_epoch 100 epoch_i 52
+total_train_epoch 100 epoch_i 53
+total_train_epoch 100 epoch_i 54
+total_train_epoch 100 epoch_i 55
+total_train_epoch 100 epoch_i 56
+total_train_epoch 100 epoch_i 57
+total_train_epoch 100 epoch_i 58
+total_train_epoch 100 epoch_i 59
+total_train_epoch 100 epoch_i 60
+total_train_epoch 100 epoch_i 61
+total_train_epoch 100 epoch_i 62
+total_train_epoch 100 epoch_i 63
+total_train_epoch 100 epoch_i 64
+total_train_epoch 100 epoch_i 65
+total_train_epoch 100 epoch_i 66
+total_train_epoch 100 epoch_i 67
+total_train_epoch 100 epoch_i 68
+total_train_epoch 100 epoch_i 69
+total_train_epoch 100 epoch_i 70
+total_train_epoch 100 epoch_i 71
+total_train_epoch 100 epoch_i 72
+total_train_epoch 100 epoch_i 73
+total_train_epoch 100 epoch_i 74
+total_train_epoch 100 epoch_i 75
+total_train_epoch 100 epoch_i 76
+total_train_epoch 100 epoch_i 77
+total_train_epoch 100 epoch_i 78
+total_train_epoch 100 epoch_i 79
+total_train_epoch 100 epoch_i 80
+total_train_epoch 100 epoch_i 81
+total_train_epoch 100 epoch_i 82
+total_train_epoch 100 epoch_i 83
+total_train_epoch 100 epoch_i 84
+total_train_epoch 100 epoch_i 85
+total_train_epoch 100 epoch_i 86
+total_train_epoch 100 epoch_i 87
+total_train_epoch 100 epoch_i 88
+total_train_epoch 100 epoch_i 89
+total_train_epoch 100 epoch_i 90
+total_train_epoch 100 epoch_i 91
+total_train_epoch 100 epoch_i 92
+total_train_epoch 100 epoch_i 93
+total_train_epoch 100 epoch_i 94
+total_train_epoch 100 epoch_i 95
+total_train_epoch 100 epoch_i 96
+total_train_epoch 100 epoch_i 97
+total_train_epoch 100 epoch_i 98
+total_train_epoch 100 epoch_i 99
+***********************************************
+unique [1, 9]
+y_mask
+tensor([False,  True,  True,  True, False, False, False,  True, False, False,
+         True,  True,  True, False,  True,  True,  True, False,  True,  True,
+        False, False, False, False, False, False, False, False, False, False,
+         True, False, False,  True,  True, False, False,  True,  True, False,
+        False,  True, False, False,  True,  True,  True, False,  True, False,
+        False,  True, False,  True,  True, False, False,  True,  True,  True,
+         True,  True,  True,  True,  True,  True, False,  True,  True,  True,
+         True, False,  True, False,  True,  True,  True, False,  True, False,
+         True, False,  True,  True, False,  True,  True,  True,  True, False,
+        False,  True,  True,  True,  True,  True,  True,  True,  True,  True,
+         True,  True,  True,  True,  True,  True, False, False,  True,  True,
+         True,  True,  True,  True, False,  True, False,  True,  True,  True,
+         True,  True,  True,  True,  True, False, False, False, False,  True,
+        False, False,  True,  True,  True,  True,  True,  True,  True, False,
+        False,  True,  True,  True, False, False, False,  True, False,  True,
+        False,  True,  True, False, False,  True, False,  True,  True,  True,
+         True, False,  True, False,  True,  True,  True,  True,  True, False,
+         True,  True, False, False, False,  True,  True,  True, False,  True,
+         True, False,  True, False,  True,  True, False, False, False,  True,
+         True,  True, False, False,  True,  True,  True,  True,  True, False],
+       device='cuda:0')
+corr
+tensor([0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0.])
+_clean_ps 5
+tensor([[7.9476e-01, 7.9476e-01, 7.4923e-01, 1.5211e-01, 1.4066e-05, 4.1514e-01,
+         5.0641e-01, 5.5428e-01, 7.7904e-01, 2.9220e-01, 2.9365e-37, 7.9476e-01,
+         7.3914e-02, 1.1048e-03, 7.3914e-02, 4.1514e-01, 7.9476e-01, 1.8726e-02,
+         7.8205e-01, 7.9476e-01, 7.6393e-01, 7.9247e-01, 2.9365e-37, 7.8476e-01,
+         1.4066e-05, 7.9476e-01, 7.3772e-01, 7.9476e-01, 5.2297e-01, 3.9540e-01,
+         7.5447e-01, 7.9476e-01, 7.9476e-01, 7.8476e-01, 7.3772e-01, 5.3893e-01,
+         1.1048e-03, 7.8925e-01, 5.0641e-01, 4.8926e-01, 5.3893e-01, 7.9476e-01,
+         7.2474e-01, 7.8925e-01, 4.0842e-02, 7.9476e-01, 7.9475e-01, 7.9476e-01,
+         7.9359e-01, 7.7211e-01, 7.9476e-01, 2.9365e-37, 4.4839e-04, 7.8716e-01,
+         7.9476e-01, 5.0628e-02, 7.8716e-01, 3.1318e-01, 7.9476e-01, 6.7592e-01,
+         6.1655e-02, 7.4366e-01, 7.3772e-01, 5.0641e-01, 7.8476e-01, 5.6903e-01,
+         2.9365e-37, 2.0955e-01, 7.8476e-01, 1.1772e-01, 2.9365e-37, 7.9476e-01,
+         2.2178e-03, 6.7592e-01, 6.2208e-01, 7.6818e-01, 7.9476e-01, 7.6393e-01,
+         7.9476e-01, 7.1767e-01, 2.9365e-37, 7.9476e-01, 6.6618e-01, 7.9476e-01,
+         7.9476e-01, 2.2178e-03, 7.9476e-01, 4.4839e-04, 2.9365e-37, 2.5040e-01,
+         4.4839e-04, 1.2526e-04, 4.7153e-01, 7.9476e-01, 7.5447e-01, 5.3893e-01,
+         7.8925e-01, 7.6818e-01, 7.7211e-01, 6.2984e-03, 3.2286e-02, 5.3893e-01,
+         5.8318e-01, 7.9476e-01, 7.7904e-01, 7.9476e-01, 7.9247e-01, 7.9102e-01,
+         6.4519e-01, 7.0229e-01, 7.5447e-01, 6.8517e-01, 2.9365e-37, 2.7124e-01,
+         6.0969e-01, 5.3893e-01, 7.9476e-01, 1.0200e-01, 4.3444e-01, 7.7573e-01,
+         2.9365e-37, 7.3142e-01, 2.9365e-37, 1.1048e-03],
+        [8.3863e-01, 8.7227e-01, 7.2593e-01, 5.2689e-02, 2.2730e-04, 1.9219e-01,
+         4.0392e-01, 5.0500e-01, 8.4267e-01, 1.9219e-01, 5.5045e-04, 7.7988e-01,
+         3.7350e-02, 2.2730e-04, 9.1084e-03, 7.4289e-01, 8.6263e-01, 1.6071e-01,
+         5.5091e-01, 8.2530e-01, 7.5858e-01, 7.5858e-01, 1.2056e-36, 7.9872e-01,
+         4.6131e-03, 5.7951e-01, 5.9319e-01, 8.0450e-01, 5.3600e-01, 4.3877e-01,
+         5.7951e-01, 8.3439e-01, 8.5681e-01, 7.3458e-01, 8.0450e-01, 5.7951e-01,
+         5.5045e-04, 7.5089e-01, 4.4619e-02, 3.8618e-01, 8.2995e-01, 8.7203e-01,
+         8.3439e-01, 8.4267e-01, 3.0863e-02, 8.6942e-01, 8.1004e-01, 6.9792e-01,
+         8.7227e-01, 6.0646e-01, 8.7227e-01, 1.2056e-36, 1.2056e-36, 8.1004e-01,
+         8.7227e-01, 3.0661e-03, 8.2043e-01, 5.0500e-01, 8.0450e-01, 1.7619e-01,
+         9.1084e-03, 4.0392e-01, 8.2530e-01, 3.3219e-01, 8.2043e-01, 7.7306e-01,
+         1.2056e-36, 5.2069e-01, 7.3458e-01, 9.1084e-03, 1.2056e-36, 8.2995e-01,
+         1.2163e-02, 5.3600e-01, 5.2069e-01, 8.3863e-01, 8.7227e-01, 8.2043e-01,
+         8.7227e-01, 6.8786e-01, 1.2056e-36, 8.7227e-01, 4.5581e-01, 8.5014e-01,
+         8.7227e-01, 6.6090e-03, 8.5358e-01, 1.9117e-03, 1.2056e-36, 1.4583e-01,
+         3.7350e-02, 1.2056e-36, 2.6037e-01, 8.7227e-01, 7.6596e-01, 2.9607e-01,
+         5.3600e-01, 8.5983e-01, 7.7306e-01, 7.1268e-02, 1.2163e-02, 1.4583e-01,
+         4.7254e-01, 8.5358e-01, 7.0761e-01, 8.7227e-01, 8.6942e-01, 8.1535e-01,
+         5.3600e-01, 8.1535e-01, 7.3458e-01, 7.1695e-01, 1.2056e-36, 2.9607e-01,
+         6.3174e-01, 5.0500e-01, 8.5983e-01, 1.0517e-01, 1.0517e-01, 8.1535e-01,
+         2.5134e-02, 7.0761e-01, 6.5294e-05, 1.0925e-03],
+        [8.2241e-01, 8.5128e-01, 7.0699e-01, 3.6165e-01, 3.3604e-03, 4.9223e-01,
+         7.1484e-01, 5.3531e-01, 8.2578e-01, 5.8716e-01, 1.0760e-04, 8.2899e-01,
+         2.4545e-02, 1.6479e-03, 6.0245e-04, 8.2241e-01, 8.5128e-01, 1.5262e-01,
+         7.8926e-01, 7.5629e-01, 8.3202e-01, 8.5128e-01, 1.3860e-29, 7.6233e-01,
+         3.3604e-03, 7.7912e-01, 7.0699e-01, 8.5128e-01, 6.5335e-01, 3.4409e-01,
+         6.3277e-01, 8.5128e-01, 8.5128e-01, 7.1484e-01, 7.9404e-01, 5.8716e-01,
+         6.0245e-04, 8.3489e-01, 4.2950e-01, 8.1130e-01, 6.9038e-01, 8.5128e-01,
+         8.5128e-01, 8.4950e-01, 6.9705e-02, 8.2241e-01, 7.9863e-01, 8.5128e-01,
+         8.2241e-01, 5.4887e-01, 8.5128e-01, 6.0245e-04, 1.3860e-29, 8.5128e-01,
+         8.2578e-01, 3.9684e-02, 8.5119e-01, 4.9223e-01, 8.1888e-01, 7.4350e-01,
+         1.3705e-01, 7.2241e-01, 8.5128e-01, 6.9705e-02, 8.0303e-01, 8.1130e-01,
+         1.3860e-29, 6.7253e-01, 7.1484e-01, 1.8453e-02, 1.3860e-29, 8.4454e-01,
+         1.3860e-29, 4.6159e-01, 5.4887e-01, 8.4811e-01, 8.5128e-01, 8.5128e-01,
+         7.6233e-01, 7.8429e-01, 3.9684e-02, 8.5128e-01, 6.1073e-01, 7.9863e-01,
+         8.5128e-01, 1.8453e-02, 8.5128e-01, 1.0760e-04, 1.0760e-04, 3.4409e-01,
+         1.3327e-02, 3.3604e-03, 3.9612e-01, 8.5128e-01, 8.0303e-01, 5.2134e-01,
+         8.0303e-01, 7.2971e-01, 8.1518e-01, 1.2209e-01, 2.4545e-02, 6.5335e-01,
+         5.0699e-01, 8.5128e-01, 7.9404e-01, 8.4242e-01, 8.5128e-01, 8.5128e-01,
+         7.2971e-01, 8.4009e-01, 7.7374e-01, 8.1518e-01, 1.3860e-29, 4.2950e-01,
+         5.9914e-01, 5.8716e-01, 8.5128e-01, 4.9223e-01, 4.1296e-01, 7.5002e-01,
+         5.8748e-02, 8.4242e-01, 1.3860e-29, 1.3860e-29],
+        [8.7690e-01, 8.6388e-01, 7.2692e-01, 8.5367e-02, 2.2106e-05, 3.3111e-01,
+         7.4824e-01, 4.6463e-01, 8.3119e-01, 1.4543e-01, 4.4822e-48, 8.4996e-01,
+         5.2353e-02, 4.1936e-03, 1.8768e-03, 6.4837e-01, 8.7690e-01, 9.8682e-02,
+         3.9884e-01, 8.7579e-01, 8.6388e-01, 8.4996e-01, 2.5427e-07, 8.2567e-01,
+         4.2600e-06, 8.1356e-01, 7.0326e-01, 8.2567e-01, 2.0136e-01, 5.4578e-01,
+         3.7635e-01, 8.7656e-01, 8.7690e-01, 8.1356e-01, 8.7579e-01, 1.4543e-01,
+         4.4822e-48, 8.1980e-01, 3.9884e-01, 7.9245e-01, 7.9990e-01, 8.7310e-01,
+         8.2567e-01, 7.8456e-01, 5.9332e-03, 8.6388e-01, 7.8456e-01, 8.7690e-01,
+         8.7690e-01, 8.1980e-01, 8.6084e-01, 4.4822e-48, 4.4822e-48, 8.3637e-01,
+         8.7690e-01, 4.1936e-03, 7.3786e-01, 4.4306e-01, 8.7690e-01, 6.6308e-01,
+         5.9332e-03, 4.4306e-01, 7.3786e-01, 2.2168e-01, 8.7462e-01, 8.4121e-01,
+         4.4822e-48, 8.0693e-01, 7.9245e-01, 4.3590e-02, 2.5427e-07, 8.7690e-01,
+         4.4822e-48, 7.9990e-01, 4.8574e-01, 8.7310e-01, 8.7690e-01, 8.1980e-01,
+         8.7690e-01, 8.7310e-01, 3.6629e-04, 8.7690e-01, 5.8269e-01, 8.7690e-01,
+         8.7690e-01, 4.4822e-48, 8.6910e-01, 4.4822e-48, 7.0991e-05, 5.9332e-03,
+         1.7525e-04, 4.2600e-06, 2.8625e-01, 8.5388e-01, 8.7656e-01, 3.0858e-01,
+         7.3786e-01, 7.7622e-01, 8.6388e-01, 2.9167e-02, 3.6629e-04, 3.0858e-01,
+         2.6424e-01, 7.2692e-01, 8.7462e-01, 8.4121e-01, 8.6388e-01, 8.6084e-01,
+         6.4837e-01, 8.7690e-01, 2.6424e-01, 8.7579e-01, 2.5427e-07, 4.4306e-01,
+         6.7713e-01, 6.4837e-01, 8.7690e-01, 8.1551e-03, 4.2110e-01, 8.6910e-01,
+         2.8641e-03, 8.7310e-01, 4.4822e-48, 6.8246e-04],
+        [7.9912e-01, 7.9912e-01, 5.6787e-01, 5.0880e-01, 6.5514e-04, 5.0880e-01,
+         7.9879e-01, 6.0278e-01, 7.9912e-01, 5.0880e-01, 1.1635e-53, 7.9912e-01,
+         3.9115e-02, 3.2869e-04, 7.0577e-03, 7.9912e-01, 7.9912e-01, 3.9115e-02,
+         7.9912e-01, 7.9912e-01, 7.9665e-01, 7.9912e-01, 1.1635e-53, 7.9665e-01,
+         1.4371e-05, 4.6523e-01, 5.4906e-01, 7.9912e-01, 7.9665e-01, 1.7780e-01,
+         7.7431e-01, 7.9912e-01, 7.9912e-01, 7.9796e-01, 7.9912e-01, 7.5746e-01,
+         4.8332e-03, 7.7431e-01, 5.8577e-01, 7.8988e-01, 7.6360e-01, 7.9912e-01,
+         7.9912e-01, 7.9912e-01, 4.8646e-02, 7.9912e-01, 7.9796e-01, 7.9912e-01,
+         7.9912e-01, 6.8672e-01, 7.9912e-01, 3.2869e-04, 1.4486e-04, 7.9912e-01,
+         7.9912e-01, 1.4486e-04, 7.9879e-01, 5.8577e-01, 7.9912e-01, 7.8305e-01,
+         3.2869e-04, 7.8670e-01, 7.4353e-01, 1.3704e-01, 7.9912e-01, 7.8305e-01,
+         1.1635e-53, 6.1890e-01, 7.9912e-01, 9.9725e-03, 1.4371e-05, 7.9912e-01,
+         5.2917e-05, 6.7477e-01, 5.8577e-01, 7.7892e-01, 7.9879e-01, 7.9879e-01,
+         7.9912e-01, 6.3413e-01, 1.1635e-53, 7.9912e-01, 7.0837e-01, 7.9796e-01,
+         7.9912e-01, 1.4371e-05, 7.9912e-01, 1.1635e-53, 1.1635e-53, 2.4070e-02,
+         1.1635e-53, 1.1635e-53, 7.1813e-01, 7.9912e-01, 7.9912e-01, 6.3413e-01,
+         7.0837e-01, 7.9912e-01, 7.9912e-01, 3.2869e-04, 3.9115e-02, 7.0837e-01,
+         4.1879e-01, 7.9912e-01, 7.8305e-01, 7.9912e-01, 7.9912e-01, 7.9260e-01,
+         7.8305e-01, 7.9912e-01, 7.1813e-01, 7.4353e-01, 1.1635e-53, 5.6787e-01,
+         3.4543e-01, 4.8741e-01, 7.9912e-01, 2.9561e-01, 5.0880e-01, 7.9912e-01,
+         9.5915e-08, 7.9879e-01, 3.2869e-04, 3.2869e-04]], dtype=torch.float64)
+after mean!!
+_clean_ps 124
+tensor([8.2637e-01, 8.3626e-01, 6.9539e-01, 2.3212e-01, 8.5581e-04, 3.8790e-01,
+        6.3444e-01, 5.3240e-01, 8.1556e-01, 3.4516e-01, 1.3161e-04, 8.1054e-01,
+        4.5455e-02, 1.5005e-03, 1.8512e-02, 6.8559e-01, 8.3694e-01, 9.3971e-02,
+        6.6404e-01, 8.1025e-01, 8.0301e-01, 8.1028e-01, 5.0853e-08, 7.9363e-01,
+        1.6012e-03, 6.8643e-01, 6.5805e-01, 8.1507e-01, 5.4206e-01, 3.8037e-01,
+        6.2348e-01, 8.3122e-01, 8.3578e-01, 7.6914e-01, 8.0224e-01, 5.2170e-01,
+        1.4182e-03, 7.9383e-01, 3.9303e-01, 6.5382e-01, 7.2455e-01, 8.3806e-01,
+        8.0704e-01, 8.1302e-01, 3.9198e-02, 8.2992e-01, 7.9719e-01, 8.0400e-01,
+        8.3286e-01, 6.8679e-01, 8.3566e-01, 1.8623e-04, 1.1865e-04, 8.1679e-01,
+        8.3377e-01, 1.9543e-02, 7.9909e-01, 4.6785e-01, 8.1883e-01, 6.0835e-01,
+        4.2814e-02, 6.1995e-01, 7.7914e-01, 2.5341e-01, 8.1639e-01, 7.5553e-01,
+        2.7719e-30, 5.6572e-01, 7.6515e-01, 3.9768e-02, 2.9250e-06, 8.2906e-01,
+        2.8868e-03, 6.2964e-01, 5.5263e-01, 8.2139e-01, 8.3880e-01, 8.1085e-01,
+        8.2108e-01, 7.3941e-01, 8.0100e-03, 8.3887e-01, 6.0475e-01, 8.2368e-01,
+        8.3887e-01, 5.4589e-03, 8.3357e-01, 4.9353e-04, 3.5718e-05, 1.5406e-01,
+        1.0260e-02, 6.9799e-04, 4.2648e-01, 8.3426e-01, 7.9983e-01, 4.5981e-01,
+        7.1490e-01, 7.8661e-01, 8.0467e-01, 4.5830e-02, 2.1695e-02, 4.7101e-01,
+        4.4915e-01, 8.0513e-01, 7.8767e-01, 8.2996e-01, 8.3524e-01, 8.2222e-01,
+        6.6846e-01, 8.0675e-01, 6.4903e-01, 7.6732e-01, 5.0853e-08, 4.0155e-01,
+        5.7263e-01, 5.5338e-01, 8.3638e-01, 2.0064e-01, 3.7649e-01, 8.0186e-01,
+        1.7349e-02, 7.9067e-01, 7.8797e-05, 6.4170e-04], dtype=torch.float64)
+m
+tensor([ True,  True,  True, False, False, False,  True, False,  True, False,
+        False,  True,  True, False, False, False,  True,  True, False,  True,
+         True,  True, False, False, False,  True,  True,  True,  True,  True,
+        False,  True,  True,  True,  True, False, False,  True, False, False,
+         True,  True,  True,  True, False,  True,  True,  True, False, False,
+         True, False, False, False,  True, False,  True, False, False,  True,
+        False,  True,  True, False,  True,  True, False,  True, False, False,
+        False,  True, False,  True,  True,  True,  True,  True,  True,  True,
+        False,  True,  True,  True,  True, False,  True, False, False,  True,
+        False, False, False,  True,  True, False,  True,  True,  True, False,
+        False, False,  True, False,  True, False,  True,  True, False, False,
+        False,  True, False, False,  True, False,  True, False, False,  True,
+        False, False, False, False])
+class: 1
+--- num of selected samples: 65
+--- num of selected corrupt samples: 0.0
+y_mask
+tensor([ True, False, False, False,  True,  True,  True, False,  True,  True,
+        False, False, False,  True, False, False, False,  True, False, False,
+         True,  True,  True,  True,  True,  True,  True,  True,  True,  True,
+        False,  True,  True, False, False,  True,  True, False, False,  True,
+         True, False,  True,  True, False, False, False,  True, False,  True,
+         True, False,  True, False, False,  True,  True, False, False, False,
+        False, False, False, False, False, False,  True, False, False, False,
+        False,  True, False,  True, False, False, False,  True, False,  True,
+        False,  True, False, False,  True, False, False, False, False,  True,
+         True, False, False, False, False, False, False, False, False, False,
+        False, False, False, False, False, False,  True,  True, False, False,
+        False, False, False, False,  True, False,  True, False, False, False,
+        False, False, False, False, False,  True,  True,  True,  True, False,
+         True,  True, False, False, False, False, False, False, False,  True,
+         True, False, False, False,  True,  True,  True, False,  True, False,
+         True, False, False,  True,  True, False,  True, False, False, False,
+        False,  True, False,  True, False, False, False, False, False,  True,
+        False, False,  True,  True,  True, False, False, False,  True, False,
+        False,  True, False,  True, False, False,  True,  True,  True, False,
+        False, False,  True,  True, False, False, False, False, False,  True],
+       device='cuda:0')
+corr
+tensor([1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1.])
+_clean_ps 5
+tensor([[8.5316e-16, 4.1528e-01, 8.3617e-01, 9.0962e-02, 6.9059e-01, 4.5886e-01,
+         3.3695e-02, 1.0000e+00, 2.3449e-01, 7.6432e-01, 8.5316e-16, 9.8307e-01,
+         1.7606e-02, 3.0302e-01, 9.8307e-01, 6.1041e-02, 1.0000e+00, 5.0152e-01,
+         2.5382e-02, 4.3718e-01, 8.3617e-01, 6.9996e-01, 8.5410e-01, 6.7169e-01,
+         7.6432e-01, 4.2452e-02, 9.3817e-01, 5.6363e-01, 4.5886e-01, 9.7050e-01,
+         9.0962e-02, 7.7337e-01, 8.0762e-02, 1.8904e-01, 4.9094e-01, 8.7216e-01,
+         5.6363e-01, 2.8021e-01, 3.2576e-01, 2.8021e-01, 4.2626e-01, 1.0509e-02,
+         8.5316e-16, 8.9042e-01, 1.0509e-02, 2.6878e-01, 6.8117e-01, 4.3488e-03,
+         7.6432e-01, 1.0000e+00, 7.7337e-01, 9.0962e-02, 8.5316e-16, 1.0000e+00,
+         8.4513e-01, 1.2262e-01, 6.4293e-01, 6.4293e-01, 8.5316e-16, 3.4838e-01,
+         3.8204e-01, 1.7606e-02, 5.9383e-01, 3.8204e-01, 5.0152e-01, 7.1856e-01,
+         1.0000e+00, 8.0932e-01, 1.5544e-01, 6.9996e-01, 8.9967e-01, 2.6878e-01,
+         5.1585e-02, 1.3345e-01, 1.1191e-01, 5.3286e-01],
+        [8.6783e-14, 3.5347e-01, 8.7541e-01, 2.6951e-01, 4.2636e-01, 6.1979e-01,
+         6.2924e-02, 9.8779e-01, 2.1696e-01, 9.2501e-01, 9.2784e-02, 9.1500e-01,
+         1.5428e-01, 2.5899e-01, 6.1979e-01, 8.6783e-14, 6.9918e-01, 6.6953e-01,
+         9.2784e-02, 5.8972e-01, 1.0000e+00, 8.4601e-01, 5.9976e-01, 5.9976e-01,
+         5.5947e-01, 8.6783e-14, 8.7541e-01, 6.4969e-01, 5.6957e-01, 9.3510e-01,
+         8.2741e-02, 6.8931e-01, 8.6783e-14, 1.2331e-01, 5.3920e-01, 6.7943e-01,
+         4.6766e-01, 5.0866e-01, 1.7509e-01, 1.5428e-01, 2.4848e-01, 1.1308e-01,
+         9.2784e-02, 7.0903e-01, 7.4904e-03, 1.2331e-01, 7.9718e-01, 8.6783e-14,
+         9.4528e-01, 1.0000e+00, 3.8479e-01, 1.4392e-01, 8.2741e-02, 1.0000e+00,
+         4.7794e-01, 1.8553e-01, 8.8526e-01, 1.0000e+00, 3.4145e-02, 4.3579e-02,
+         3.8479e-01, 9.2784e-02, 8.1670e-01, 3.0104e-01, 5.6957e-01, 7.3850e-01,
+         9.1500e-01, 8.0694e-01, 4.5736e-01, 5.2904e-01, 1.0000e+00, 3.5347e-01,
+         1.1308e-01, 1.8553e-01, 8.6783e-14, 8.3623e-01],
+        [4.0378e-02, 3.7511e-01, 8.0837e-01, 1.6577e-01, 5.2554e-01, 7.5935e-01,
+         4.9645e-02, 7.3746e-01, 4.1210e-01, 8.4996e-01, 4.0378e-02, 8.8738e-01,
+         1.0359e-01, 3.1101e-01, 7.7359e-01, 4.0378e-02, 1.0000e+00, 4.3603e-01,
+         2.7077e-19, 5.3601e-01, 1.0000e+00, 3.8757e-01, 1.0000e+00, 7.9456e-01,
+         6.3221e-01, 2.7077e-19, 6.8319e-01, 7.1481e-01, 5.6647e-01, 9.3758e-01,
+         3.1764e-02, 8.1525e-01, 2.7077e-19, 4.9645e-02, 6.4972e-01, 6.7501e-01,
+         6.1416e-01, 5.2554e-01, 3.4980e-01, 3.9991e-01, 2.5821e-01, 4.9645e-02,
+         2.7077e-19, 8.6436e-01, 3.1764e-02, 2.0507e-01, 6.4103e-01, 1.8748e-03,
+         6.3221e-01, 1.0000e+00, 4.9318e-01, 1.0359e-01, 2.7077e-19, 7.8761e-01,
+         8.2213e-01, 3.4980e-01, 8.4292e-01, 8.9571e-01, 2.7077e-19, 5.9553e-01,
+         2.8472e-01, 3.2404e-01, 8.3594e-01, 4.2414e-01, 6.0492e-01, 6.9126e-01,
+         7.3000e-01, 5.9553e-01, 4.4778e-01, 5.7631e-01, 1.0000e+00, 4.7079e-01,
+         9.1966e-02, 4.3603e-01, 1.0359e-01, 6.5827e-01],
+        [3.6050e-03, 4.3403e-01, 7.5310e-01, 4.6474e-01, 7.3403e-01, 7.6129e-01,
+         2.9662e-02, 7.6806e-01, 4.6474e-01, 7.6943e-01, 1.4026e-32, 7.5610e-01,
+         3.7170e-02, 1.0193e-01, 7.6943e-01, 1.4026e-32, 7.5310e-01, 6.6728e-01,
+         2.9662e-02, 6.6728e-01, 7.6943e-01, 7.5884e-01, 7.6943e-01, 7.6943e-01,
+         6.9578e-01, 1.4026e-32, 7.6943e-01, 7.0211e-01, 4.4958e-01, 7.6943e-01,
+         4.4277e-05, 6.3334e-01, 1.4026e-32, 3.7170e-02, 7.2452e-01, 7.3838e-01,
+         5.2128e-01, 6.6728e-01, 3.8528e-01, 4.3403e-01, 4.7950e-01, 2.3111e-02,
+         2.9662e-02, 7.6531e-01, 1.4026e-32, 2.3111e-02, 6.9578e-01, 2.9662e-02,
+         7.1389e-01, 7.6943e-01, 6.2394e-01, 1.7736e-01, 8.9714e-04, 7.6531e-01,
+         7.6943e-01, 2.9662e-02, 7.4246e-01, 7.6943e-01, 1.4026e-32, 5.9342e-01,
+         5.2128e-01, 4.1812e-01, 7.5884e-01, 4.6474e-01, 5.7105e-01, 7.4627e-01,
+         7.6943e-01, 7.6943e-01, 5.3436e-01, 6.8913e-01, 7.4627e-01, 5.7105e-01,
+         1.9402e-01, 1.4538e-01, 1.3023e-01, 5.9342e-01],
+        [2.9556e-02, 2.1135e-01, 8.9803e-01, 5.1529e-01, 7.6715e-01, 7.9732e-01,
+         8.9822e-02, 1.0000e+00, 3.6350e-01, 8.6778e-01, 1.1002e-01, 9.2836e-01,
+         1.8092e-01, 7.2692e-01, 1.0000e+00, 7.2915e-13, 9.7924e-01, 4.8497e-01,
+         1.5051e-01, 4.4452e-01, 9.2836e-01, 9.2836e-01, 6.5647e-01, 7.4703e-01,
+         6.9673e-01, 7.2915e-13, 7.7721e-01, 5.2539e-01, 4.9508e-01, 9.0813e-01,
+         1.1002e-01, 8.3757e-01, 7.2915e-13, 1.4038e-01, 6.7660e-01, 9.1824e-01,
+         4.6475e-01, 6.5647e-01, 3.0266e-01, 2.8237e-01, 2.2149e-01, 1.2014e-01,
+         4.9564e-02, 8.4764e-01, 1.5051e-01, 7.2915e-13, 1.0000e+00, 8.9822e-02,
+         7.6715e-01, 9.5881e-01, 5.6576e-01, 2.3164e-01, 7.2915e-13, 1.0000e+00,
+         7.3697e-01, 1.5051e-01, 9.8954e-01, 7.9732e-01, 4.9564e-02, 4.9508e-01,
+         3.5337e-01, 2.0120e-01, 8.1744e-01, 1.9106e-01, 6.0610e-01, 3.4323e-01,
+         9.1824e-01, 8.9803e-01, 5.8594e-01, 3.0266e-01, 1.0000e+00, 7.5709e-01,
+         1.1002e-01, 3.1281e-01, 7.2915e-13, 9.8954e-01]], dtype=torch.float64)
+after mean!!
+_clean_ps 76
+tensor([0.0147, 0.3578, 0.8342, 0.3013, 0.6287, 0.6793, 0.0531, 0.8987, 0.3384,
+        0.8353, 0.0486, 0.8940, 0.0987, 0.3404, 0.8292, 0.0203, 0.8863, 0.5519,
+        0.0597, 0.5349, 0.9068, 0.7241, 0.7760, 0.7165, 0.6697, 0.0085, 0.8087,
+        0.6311, 0.5079, 0.9041, 0.0631, 0.7498, 0.0162, 0.1079, 0.6162, 0.7766,
+        0.5263, 0.5276, 0.3077, 0.3102, 0.3268, 0.0633, 0.0344, 0.8153, 0.0401,
+        0.1241, 0.7630, 0.0251, 0.7646, 0.9456, 0.5682, 0.1495, 0.0167, 0.9106,
+        0.7303, 0.1676, 0.8206, 0.8211, 0.0167, 0.4152, 0.3852, 0.2107, 0.7646,
+        0.3526, 0.5706, 0.6476, 0.8665, 0.7758, 0.4362, 0.5594, 0.9292, 0.4842,
+        0.1121, 0.2426, 0.0691, 0.7221], dtype=torch.float64)
+m
+tensor([False,  True,  True, False,  True,  True, False,  True, False,  True,
+        False,  True, False,  True,  True, False,  True, False, False,  True,
+         True,  True,  True,  True,  True, False,  True,  True, False,  True,
+        False, False, False, False, False,  True, False,  True, False, False,
+        False, False, False, False, False, False,  True, False,  True,  True,
+         True, False, False,  True,  True, False,  True,  True, False, False,
+        False, False, False,  True, False,  True, False,  True, False,  True,
+         True,  True, False, False, False,  True])
+class: 9
+--- num of selected samples: 36
+--- num of selected corrupt samples: 36.0
+***********************************************
+clean_idx_len 101
+[1, 2, 3, 12, 15, 19, 30, 38, 41, 45, 46, 48, 57, 58, 59, 60, 61, 63, 64, 65, 67, 70, 75, 76, 78, 80, 83, 85, 86, 91, 95, 97, 100, 102, 103, 105, 108, 110, 115, 118, 119, 120, 121, 122, 123, 124, 132, 133, 134, 135, 137, 142, 151, 152, 157, 158, 159, 165, 167, 170, 171, 179, 184, 189, 194, 4, 5, 8, 9, 17, 21, 23, 25, 26, 28, 32, 35, 36, 39, 40, 42, 47, 49, 52, 77, 81, 126, 128, 130, 131, 144, 145, 148, 150, 169, 173, 178, 183, 186, 187, 199]
+clean_p
+tensor([0.8264, 0.8363, 0.6954, 0.6344, 0.8156, 0.8105, 0.0455, 0.8369, 0.0940,
+        0.8103, 0.8030, 0.8103, 0.6864, 0.6580, 0.8151, 0.5421, 0.3804, 0.8312,
+        0.8358, 0.7691, 0.8022, 0.7938, 0.7246, 0.8381, 0.8070, 0.8130, 0.8299,
+        0.7972, 0.8040, 0.8357, 0.8338, 0.7991, 0.6083, 0.6199, 0.7791, 0.8164,
+        0.7555, 0.5657, 0.8291, 0.6296, 0.5526, 0.8214, 0.8388, 0.8108, 0.8211,
+        0.7394, 0.8389, 0.6048, 0.8237, 0.8389, 0.8336, 0.1541, 0.8343, 0.7998,
+        0.7149, 0.7866, 0.8047, 0.4491, 0.7877, 0.8352, 0.8222, 0.7673, 0.5726,
+        0.8364, 0.8019, 0.3578, 0.8342, 0.6287, 0.6793, 0.8987, 0.8353, 0.8940,
+        0.3404, 0.8292, 0.8863, 0.5349, 0.9068, 0.7241, 0.7760, 0.7165, 0.6697,
+        0.8087, 0.6311, 0.9041, 0.7766, 0.5276, 0.7630, 0.7646, 0.9456, 0.5682,
+        0.9106, 0.7303, 0.8206, 0.8211, 0.3526, 0.6476, 0.7758, 0.5594, 0.9292,
+        0.4842, 0.7221])
+purified buffer update!!
+update!!
+*nbatch 101
+#normal data: 65.0, 	 #corrupted data: 36.0
+buffer_corrupts tensor(36.)
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+delay buffer full
+total_train_epoch 100 epoch_i 0
+total_train_epoch 100 epoch_i 1
+total_train_epoch 100 epoch_i 2
+total_train_epoch 100 epoch_i 3
+total_train_epoch 100 epoch_i 4
+total_train_epoch 100 epoch_i 5
+total_train_epoch 100 epoch_i 6
+total_train_epoch 100 epoch_i 7
+total_train_epoch 100 epoch_i 8
+total_train_epoch 100 epoch_i 9
+total_train_epoch 100 epoch_i 10
+total_train_epoch 100 epoch_i 11
+total_train_epoch 100 epoch_i 12
+total_train_epoch 100 epoch_i 13
+total_train_epoch 100 epoch_i 14
+total_train_epoch 100 epoch_i 15
+total_train_epoch 100 epoch_i 16
+total_train_epoch 100 epoch_i 17
+total_train_epoch 100 epoch_i 18
+total_train_epoch 100 epoch_i 19
+total_train_epoch 100 epoch_i 20
+total_train_epoch 100 epoch_i 21
+total_train_epoch 100 epoch_i 22
+total_train_epoch 100 epoch_i 23
+total_train_epoch 100 epoch_i 24
+total_train_epoch 100 epoch_i 25
+total_train_epoch 100 epoch_i 26
+total_train_epoch 100 epoch_i 27
+total_train_epoch 100 epoch_i 28
+total_train_epoch 100 epoch_i 29
+total_train_epoch 100 epoch_i 30
+total_train_epoch 100 epoch_i 31
+total_train_epoch 100 epoch_i 32
+total_train_epoch 100 epoch_i 33
+total_train_epoch 100 epoch_i 34
+total_train_epoch 100 epoch_i 35
+total_train_epoch 100 epoch_i 36
+total_train_epoch 100 epoch_i 37
+total_train_epoch 100 epoch_i 38
+total_train_epoch 100 epoch_i 39
+total_train_epoch 100 epoch_i 40
+total_train_epoch 100 epoch_i 41
+total_train_epoch 100 epoch_i 42
+total_train_epoch 100 epoch_i 43
+total_train_epoch 100 epoch_i 44
+total_train_epoch 100 epoch_i 45
+total_train_epoch 100 epoch_i 46
+total_train_epoch 100 epoch_i 47
+total_train_epoch 100 epoch_i 48
+total_train_epoch 100 epoch_i 49
+total_train_epoch 100 epoch_i 50
+total_train_epoch 100 epoch_i 51
+total_train_epoch 100 epoch_i 52
+total_train_epoch 100 epoch_i 53
+total_train_epoch 100 epoch_i 54
+total_train_epoch 100 epoch_i 55
+total_train_epoch 100 epoch_i 56
+total_train_epoch 100 epoch_i 57
+total_train_epoch 100 epoch_i 58
+total_train_epoch 100 epoch_i 59
+total_train_epoch 100 epoch_i 60
+total_train_epoch 100 epoch_i 61
+total_train_epoch 100 epoch_i 62
+total_train_epoch 100 epoch_i 63
+total_train_epoch 100 epoch_i 64
+total_train_epoch 100 epoch_i 65
+total_train_epoch 100 epoch_i 66
+total_train_epoch 100 epoch_i 67
+total_train_epoch 100 epoch_i 68
+total_train_epoch 100 epoch_i 69
+total_train_epoch 100 epoch_i 70
+total_train_epoch 100 epoch_i 71
+total_train_epoch 100 epoch_i 72
+total_train_epoch 100 epoch_i 73
+total_train_epoch 100 epoch_i 74
+total_train_epoch 100 epoch_i 75
+total_train_epoch 100 epoch_i 76
+total_train_epoch 100 epoch_i 77
+total_train_epoch 100 epoch_i 78
+total_train_epoch 100 epoch_i 79
+total_train_epoch 100 epoch_i 80
+total_train_epoch 100 epoch_i 81
+total_train_epoch 100 epoch_i 82
+total_train_epoch 100 epoch_i 83
+total_train_epoch 100 epoch_i 84
+total_train_epoch 100 epoch_i 85
+total_train_epoch 100 epoch_i 86
+total_train_epoch 100 epoch_i 87
+total_train_epoch 100 epoch_i 88
+total_train_epoch 100 epoch_i 89
+total_train_epoch 100 epoch_i 90
+total_train_epoch 100 epoch_i 91
+total_train_epoch 100 epoch_i 92
+total_train_epoch 100 epoch_i 93
+total_train_epoch 100 epoch_i 94
+total_train_epoch 100 epoch_i 95
+total_train_epoch 100 epoch_i 96
+total_train_epoch 100 epoch_i 97
+total_train_epoch 100 epoch_i 98
+total_train_epoch 100 epoch_i 99
+***********************************************
+unique [1, 9]
+y_mask
+tensor([ True, False,  True,  True, False,  True, False, False, False,  True,
+        False,  True, False,  True,  True,  True, False,  True, False, False,
+         True,  True,  True,  True, False, False, False, False,  True,  True,
+        False,  True, False,  True,  True,  True, False,  True,  True,  True,
+        False,  True, False, False,  True,  True,  True,  True,  True,  True,
+         True,  True,  True, False, False, False,  True,  True, False, False,
+         True,  True, False, False, False, False,  True, False, False,  True,
+         True,  True,  True, False, False, False, False, False,  True, False,
+         True,  True,  True, False, False,  True,  True,  True,  True,  True,
+         True,  True,  True,  True, False,  True, False,  True, False,  True,
+         True, False,  True,  True, False, False, False, False,  True, False,
+         True, False, False, False,  True,  True,  True,  True,  True,  True,
+         True,  True,  True, False, False,  True,  True, False,  True,  True,
+        False,  True,  True,  True, False, False,  True, False,  True, False,
+         True,  True, False,  True, False, False,  True,  True,  True,  True,
+         True,  True,  True,  True,  True,  True, False, False, False, False,
+        False, False, False,  True,  True,  True,  True, False, False,  True,
+         True,  True, False, False,  True,  True, False,  True,  True, False,
+        False,  True, False,  True,  True,  True, False,  True,  True, False,
+        False, False,  True,  True,  True, False,  True,  True, False, False],
+       device='cuda:0')
+corr
+tensor([0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.])
+_clean_ps 5
+tensor([[1.3090e-04, 4.1803e-04, 6.2609e-01, 8.5693e-01, 2.6607e-01, 7.9781e-01,
+         8.6919e-01, 7.6582e-01, 8.5693e-01, 8.0900e-01, 7.9189e-01, 3.8416e-34,
+         8.4196e-01, 5.6424e-02, 6.8851e-03, 3.8416e-34, 7.4354e-01, 3.0342e-03,
+         7.9189e-01, 3.3204e-02, 8.1429e-01, 2.7039e-02, 8.4196e-01, 8.0900e-01,
+         8.7869e-01, 8.4196e-01, 7.3555e-01, 1.3090e-04, 5.7533e-01, 8.7869e-01,
+         9.6173e-03, 5.7533e-01, 6.8851e-03, 1.8026e-03, 7.3555e-01, 8.7869e-01,
+         1.6725e-01, 6.8851e-03, 2.8348e-01, 4.7089e-03, 7.5906e-02, 3.7120e-01,
+         3.3619e-01, 5.6168e-01, 4.0148e-02, 6.1398e-01, 5.6424e-02, 7.3555e-01,
+         8.7869e-01, 2.8348e-01, 1.7969e-05, 1.6946e-02, 3.8853e-01, 1.3090e-04,
+         1.7969e-05, 7.0975e-01, 7.0052e-01, 6.2609e-01, 4.2264e-01, 5.0328e-01,
+         4.7885e-02, 8.6919e-01, 8.4596e-01, 2.4883e-01, 8.7616e-01, 3.8416e-34,
+         3.8416e-34, 3.8416e-34, 8.5693e-01, 8.6640e-01, 8.7869e-01, 8.7178e-01,
+         4.7089e-03, 4.0569e-01, 3.8416e-34, 8.3347e-01, 7.1866e-01, 7.7934e-01,
+         7.9781e-01, 5.6168e-01, 8.7869e-01, 3.1859e-01, 5.8860e-01, 8.6919e-01,
+         8.4978e-01, 1.2407e-01, 1.2956e-02, 7.6582e-01, 3.7120e-01, 3.8416e-34,
+         2.8348e-01, 1.7969e-05, 1.9872e-01, 6.3782e-01, 1.2956e-02, 6.0148e-01,
+         7.7271e-01, 7.5866e-01, 3.8416e-34, 6.7078e-01, 3.7120e-01, 6.0148e-01,
+         8.7869e-01, 7.0975e-01, 7.7271e-01, 1.8275e-01, 7.8573e-01, 7.7934e-01,
+         8.0900e-01, 7.7934e-01, 4.7885e-02, 8.5344e-01, 8.7778e-01, 7.2726e-01,
+         8.7869e-01, 6.8104e-01],
+        [1.7095e-67, 1.9361e-05, 6.3215e-01, 7.8224e-01, 7.8224e-01, 7.0125e-01,
+         7.8224e-01, 7.6881e-01, 7.8224e-01, 7.8224e-01, 7.8224e-01, 1.0343e-07,
+         7.8163e-01, 8.3057e-03, 2.7107e-04, 1.7095e-67, 7.8224e-01, 1.9361e-05,
+         7.8224e-01, 1.0343e-07, 7.8224e-01, 2.4155e-01, 7.8224e-01, 7.8036e-01,
+         7.8224e-01, 7.8224e-01, 7.8224e-01, 2.7107e-04, 7.8224e-01, 7.4653e-01,
+         1.9044e-09, 5.1145e-01, 1.2868e-04, 1.0576e-06, 7.8224e-01, 7.8224e-01,
+         6.3215e-01, 1.5687e-03, 2.6890e-01, 1.0576e-06, 1.7095e-67, 2.1504e-01,
+         8.6035e-02, 7.5317e-01, 1.7095e-67, 7.1204e-01, 5.2093e-04, 8.6035e-02,
+         7.8224e-01, 6.3215e-01, 1.7095e-67, 2.5173e-03, 3.2502e-01, 1.0576e-06,
+         1.0343e-07, 1.8963e-01, 7.1204e-01, 7.8224e-01, 2.4155e-01, 4.6201e-01,
+         1.4301e-01, 7.8224e-01, 7.8224e-01, 1.2868e-04, 7.8224e-01, 1.0576e-06,
+         5.2093e-04, 1.9044e-09, 7.8224e-01, 7.8224e-01, 7.8224e-01, 7.8224e-01,
+         7.1204e-01, 2.6890e-01, 1.7095e-67, 6.7677e-01, 7.8224e-01, 7.6429e-01,
+         6.6299e-01, 7.5908e-01, 7.8224e-01, 1.0316e-01, 7.8163e-01, 7.8163e-01,
+         7.8224e-01, 3.5326e-01, 1.7095e-67, 7.8163e-01, 6.8950e-01, 1.7095e-67,
+         7.3094e-01, 1.2868e-04, 1.0316e-01, 5.9670e-01, 2.7107e-04, 6.3215e-01,
+         7.8224e-01, 7.4653e-01, 1.2868e-04, 6.1501e-01, 8.6035e-02, 7.8163e-01,
+         7.8224e-01, 5.5645e-01, 7.8224e-01, 4.3584e-01, 7.8224e-01, 7.5908e-01,
+         7.8224e-01, 7.8224e-01, 4.6201e-01, 7.8224e-01, 7.5317e-01, 7.8224e-01,
+         7.8224e-01, 7.7268e-01],
+        [3.3431e-56, 5.3685e-04, 7.2336e-01, 7.2720e-01, 7.2655e-01, 6.6080e-01,
+         7.2720e-01, 7.2655e-01, 7.2720e-01, 7.2720e-01, 7.2336e-01, 5.2446e-08,
+         7.2720e-01, 1.6933e-02, 1.1141e-04, 3.3431e-56, 7.1771e-01, 1.1141e-04,
+         6.9274e-01, 3.6802e-02, 7.2720e-01, 4.5997e-02, 7.2720e-01, 7.2720e-01,
+         7.2720e-01, 5.8991e-01, 7.2720e-01, 3.3431e-56, 7.2720e-01, 7.2720e-01,
+         3.3431e-56, 5.0700e-01, 1.7131e-03, 5.3685e-04, 7.2720e-01, 7.2720e-01,
+         6.8704e-02, 4.5997e-02, 2.8518e-01, 9.9668e-06, 5.6614e-02, 6.6080e-01,
+         9.7368e-02, 4.4676e-01, 2.7727e-03, 6.9901e-01, 1.4461e-06, 6.5100e-01,
+         7.2720e-01, 5.0700e-01, 2.6179e-04, 4.5997e-02, 5.7512e-01, 3.8934e-05,
+         3.3431e-56, 4.0282e-01, 7.2336e-01, 7.2720e-01, 7.2336e-01, 7.2084e-01,
+         3.5661e-01, 7.2720e-01, 7.2720e-01, 2.7727e-03, 7.2720e-01, 3.3431e-56,
+         1.4461e-06, 1.4461e-06, 7.2720e-01, 7.2720e-01, 7.2720e-01, 7.2720e-01,
+         1.5102e-01, 5.5944e-01, 3.3431e-56, 7.2720e-01, 7.2336e-01, 7.1771e-01,
+         7.2720e-01, 6.8580e-01, 6.8580e-01, 3.5661e-01, 7.2720e-01, 7.2720e-01,
+         7.2720e-01, 3.3294e-01, 1.4461e-06, 7.2720e-01, 5.6614e-02, 3.3431e-56,
+         3.0907e-01, 2.1505e-01, 6.0381e-01, 2.1505e-01, 1.1141e-04, 7.2720e-01,
+         7.2336e-01, 7.2720e-01, 1.1141e-04, 7.2720e-01, 4.4676e-01, 3.7995e-01,
+         7.2720e-01, 6.9274e-01, 7.2720e-01, 1.3182e-01, 7.1771e-01, 7.1771e-01,
+         6.9901e-01, 5.2537e-01, 6.9274e-01, 7.2720e-01, 7.2720e-01, 7.2720e-01,
+         7.2720e-01, 5.7512e-01],
+        [1.4843e-47, 9.0167e-03, 3.6998e-01, 6.4620e-01, 6.8643e-01, 7.4223e-01,
+         8.6883e-01, 8.6625e-01, 8.3441e-01, 8.3441e-01, 7.9305e-01, 1.4843e-47,
+         8.6846e-01, 1.4843e-47, 4.9179e-03, 3.1290e-04, 8.6452e-01, 2.3909e-03,
+         7.4223e-01, 1.5104e-04, 8.6883e-01, 9.0167e-03, 8.5086e-01, 7.5184e-01,
+         8.6883e-01, 8.0664e-01, 8.6758e-01, 1.4843e-47, 8.5086e-01, 8.2431e-01,
+         1.4843e-47, 6.8643e-01, 9.8515e-04, 1.4843e-47, 8.6883e-01, 8.6883e-01,
+         3.0624e-01, 1.2078e-01, 1.1809e-02, 6.1867e-05, 1.4843e-47, 6.0055e-01,
+         6.4620e-01, 8.1288e-01, 1.5182e-02, 6.9868e-01, 1.5737e-03, 3.6998e-01,
+         8.6846e-01, 1.1809e-02, 1.4843e-47, 3.4873e-03, 6.6020e-01, 6.1867e-05,
+         1.4843e-47, 9.3477e-02, 7.5184e-01, 6.9868e-01, 7.0247e-02, 6.3159e-01,
+         2.4429e-01, 8.6244e-01, 8.6883e-01, 1.9199e-02, 8.6883e-01, 1.4843e-47,
+         9.0167e-03, 2.3832e-07, 8.6883e-01, 8.5086e-01, 8.6883e-01, 8.3441e-01,
+         1.9199e-02, 6.8643e-01, 1.5104e-04, 7.1037e-01, 8.6244e-01, 8.4720e-01,
+         6.3159e-01, 7.1037e-01, 8.6883e-01, 3.5740e-02, 8.6625e-01, 8.6883e-01,
+         8.3898e-01, 4.9179e-03, 2.3909e-03, 6.7361e-01, 5.6709e-01, 1.4843e-47,
+         5.6709e-01, 4.2940e-02, 1.3592e-01, 3.0624e-01, 3.8479e-06, 6.8643e-01,
+         8.5086e-01, 8.6883e-01, 3.1290e-04, 6.7361e-01, 4.3303e-01, 6.4620e-01,
+         8.6883e-01, 2.8526e-01, 8.4720e-01, 2.6458e-01, 8.1877e-01, 8.0664e-01,
+         8.0664e-01, 7.9305e-01, 5.3130e-01, 8.2431e-01, 8.6883e-01, 8.6883e-01,
+         8.6625e-01, 5.1258e-01],
+        [4.5252e-07, 1.3748e-66, 5.8754e-01, 8.0539e-01, 6.6940e-01, 5.8754e-01,
+         8.0539e-01, 6.3948e-01, 8.0422e-01, 8.0539e-01, 8.0513e-01, 4.5996e-08,
+         7.6290e-01, 1.6811e-01, 7.9599e-06, 1.3748e-66, 8.0539e-01, 1.0898e-04,
+         5.6831e-01, 1.0124e-03, 8.0271e-01, 2.2799e-06, 8.0539e-01, 7.4734e-01,
+         8.0539e-01, 7.3852e-01, 8.0539e-01, 1.3748e-66, 8.0539e-01, 7.6290e-01,
+         4.5252e-07, 5.4815e-01, 4.7868e-03, 1.3748e-66, 8.0539e-01, 8.0539e-01,
+         1.1225e-01, 1.0124e-03, 3.3879e-03, 1.3748e-66, 1.3748e-66, 8.0513e-01,
+         4.7868e-03, 4.3473e-01, 1.9961e-02, 8.0539e-01, 9.1204e-10, 4.1005e-01,
+         7.9466e-01, 5.4815e-01, 2.0895e-04, 1.0124e-03, 4.5887e-01, 1.3748e-66,
+         7.9599e-06, 6.5490e-01, 8.0271e-01, 7.3852e-01, 3.0880e-01, 7.1869e-01,
+         2.3366e-03, 8.0539e-01, 8.0539e-01, 6.6102e-03, 8.0539e-01, 1.3748e-66,
+         1.3748e-66, 1.3748e-66, 7.6971e-01, 8.0539e-01, 8.0539e-01, 8.0539e-01,
+         6.2947e-04, 3.7322e-04, 9.1204e-10, 7.8643e-01, 8.0539e-01, 7.6971e-01,
+         8.0539e-01, 6.9573e-01, 8.0539e-01, 4.1005e-01, 7.6290e-01, 8.0539e-01,
+         8.0422e-01, 3.1692e-02, 2.0895e-04, 8.0539e-01, 3.9190e-02, 2.2799e-06,
+         1.1225e-01, 1.1879e-02, 3.9190e-02, 5.0513e-01, 5.1964e-05, 8.0539e-01,
+         8.0539e-01, 8.0060e-01, 4.5252e-07, 7.6971e-01, 4.5887e-01, 3.8496e-01,
+         8.0539e-01, 1.8932e-01, 7.6971e-01, 3.3417e-01, 8.0539e-01, 6.6940e-01,
+         6.0581e-01, 7.5546e-01, 3.8496e-01, 7.9791e-01, 8.0539e-01, 8.0539e-01,
+         8.0539e-01, 8.0513e-01]], dtype=torch.float64)
+after mean!!
+_clean_ps 116
+tensor([2.6270e-05, 1.9982e-03, 5.8782e-01, 7.6359e-01, 6.2614e-01, 6.9793e-01,
+        8.1057e-01, 7.5338e-01, 8.0100e-01, 7.9165e-01, 7.7913e-01, 4.0374e-08,
+        7.9643e-01, 4.9954e-02, 2.4387e-03, 6.2580e-05, 7.8268e-01, 1.1330e-03,
+        7.1548e-01, 1.4234e-02, 7.9905e-01, 6.4721e-02, 8.0153e-01, 7.6315e-01,
+        8.1247e-01, 7.5186e-01, 7.8359e-01, 8.0394e-05, 7.4821e-01, 7.8793e-01,
+        1.9236e-03, 5.6567e-01, 2.8998e-03, 4.6810e-04, 7.8384e-01, 8.1247e-01,
+        2.5732e-01, 3.5249e-02, 1.7055e-01, 9.5635e-04, 2.6504e-02, 5.3054e-01,
+        2.3411e-01, 6.0184e-01, 1.5613e-02, 7.0582e-01, 1.1704e-02, 4.5052e-01,
+        8.1025e-01, 3.9652e-01, 9.7741e-05, 1.3992e-02, 4.8155e-01, 4.6551e-05,
+        5.2065e-06, 4.1012e-01, 7.3809e-01, 7.1455e-01, 3.5332e-01, 6.0728e-01,
+        1.5883e-01, 8.0929e-01, 8.0593e-01, 5.5508e-02, 8.1197e-01, 2.1152e-07,
+        1.9078e-03, 3.3726e-07, 8.0098e-01, 8.0642e-01, 8.1247e-01, 8.0421e-01,
+        1.7752e-01, 3.8417e-01, 3.0207e-05, 7.4685e-01, 7.7842e-01, 7.7565e-01,
+        7.2500e-01, 6.8253e-01, 8.0419e-01, 2.4483e-01, 7.4532e-01, 8.1045e-01,
+        8.0049e-01, 1.6937e-01, 3.1114e-03, 7.5073e-01, 3.4472e-01, 4.5599e-07,
+        4.0057e-01, 5.4002e-02, 2.1616e-01, 4.5219e-01, 2.6788e-03, 6.9053e-01,
+        7.8691e-01, 7.8037e-01, 1.1069e-04, 6.9126e-01, 3.5918e-01, 5.5884e-01,
+        8.1247e-01, 4.8670e-01, 7.7981e-01, 2.6983e-01, 7.8197e-01, 7.4644e-01,
+        7.4054e-01, 7.2709e-01, 4.2378e-01, 7.9702e-01, 8.0648e-01, 7.8219e-01,
+        8.1196e-01, 6.6931e-01], dtype=torch.float64)
+m
+tensor([False, False,  True,  True,  True,  True,  True,  True,  True,  True,
+         True, False,  True, False, False, False,  True, False,  True, False,
+         True, False, False,  True, False,  True, False, False,  True,  True,
+        False,  True, False, False,  True,  True,  True, False, False, False,
+        False,  True, False,  True, False,  True, False,  True,  True, False,
+        False, False,  True, False, False, False, False, False, False,  True,
+        False,  True,  True, False,  True, False, False, False,  True,  True,
+         True,  True,  True,  True, False,  True,  True,  True, False,  True,
+         True, False,  True,  True, False, False, False,  True, False, False,
+        False, False, False,  True, False,  True,  True,  True, False,  True,
+        False,  True,  True, False,  True, False,  True, False,  True,  True,
+         True,  True,  True,  True,  True,  True])
+class: 1
+--- num of selected samples: 62
+--- num of selected corrupt samples: 0.0
+y_mask
+tensor([False,  True, False, False,  True, False,  True,  True,  True, False,
+         True, False,  True, False, False, False,  True, False,  True,  True,
+        False, False, False, False,  True,  True,  True,  True, False, False,
+         True, False,  True, False, False, False,  True, False, False, False,
+         True, False,  True,  True, False, False, False, False, False, False,
+        False, False, False,  True,  True,  True, False, False,  True,  True,
+        False, False,  True,  True,  True,  True, False,  True,  True, False,
+        False, False, False,  True,  True,  True,  True,  True, False,  True,
+        False, False, False,  True,  True, False, False, False, False, False,
+        False, False, False, False,  True, False,  True, False,  True, False,
+        False,  True, False, False,  True,  True,  True,  True, False,  True,
+        False,  True,  True,  True, False, False, False, False, False, False,
+        False, False, False,  True,  True, False, False,  True, False, False,
+         True, False, False, False,  True,  True, False,  True, False,  True,
+        False, False,  True, False,  True,  True, False, False, False, False,
+        False, False, False, False, False, False,  True,  True,  True,  True,
+         True,  True,  True, False, False, False, False,  True,  True, False,
+        False, False,  True,  True, False, False,  True, False, False,  True,
+         True, False,  True, False, False, False,  True, False, False,  True,
+         True,  True, False, False, False,  True, False, False,  True,  True],
+       device='cuda:0')
+corr
+tensor([1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.])
+_clean_ps 5
+tensor([[ 7.9951e-01,  7.2432e-01,  1.3579e-01,  1.7259e-02,  7.9951e-01,
+          7.9951e-01,  1.2179e-12,  2.7937e-01,  4.5522e-07,  7.7496e-01,
+          7.7767e-10,  7.9951e-01,  1.3477e-07,  7.9951e-01,  7.9951e-01,
+          3.7143e-04,  7.9158e-01, 7.4836e-110,  3.4267e-06,  7.9951e-01,
+          7.5842e-01,  7.9158e-01,  3.2828e-08,  7.9951e-01,  3.5621e-05,
+         7.4836e-110,  8.0581e-06,  7.1019e-01,  7.4836e-01,  1.8740e-01,
+          5.3659e-11,  1.1357e-01, 7.4836e-110,  7.8155e-01,  5.6565e-01,
+          6.1559e-01,  6.7735e-01,  6.8468e-05,  7.4836e-01,  2.4720e-01,
+          5.3659e-11,  7.9951e-01,  7.4836e-01, 7.4836e-110,  1.3477e-07,
+          5.3809e-01,  7.9951e-01,  7.9951e-01,  6.1559e-01,  6.1272e-09,
+          7.9951e-01,  6.8468e-05,  3.4267e-06,  7.9951e-01,  3.4267e-06,
+          7.8155e-01,  7.9951e-01,  9.3842e-02, 7.4836e-110,  7.9951e-01,
+          1.8740e-01,  7.9951e-01,  7.9951e-01,  7.9951e-01,  7.9158e-01,
+          7.8708e-01,  6.1559e-01,  6.1272e-09, 7.4836e-110,  6.0693e-04,
+          7.9951e-01,  7.7767e-10,  3.5621e-05, 7.4836e-110,  3.7143e-04,
+          2.1642e-01,  7.1019e-01,  7.9951e-01,  7.9951e-01,  7.9951e-01,
+          7.4836e-01,  1.2817e-02,  5.3659e-11,  4.5522e-07],
+        [ 8.6678e-01,  6.1740e-01,  3.2393e-01,  4.0130e-02,  8.5171e-01,
+          7.4084e-01,  2.4384e-51,  3.7009e-01,  2.6804e-03,  7.7061e-01,
+          2.4384e-51,  7.6124e-01,  1.6867e-02,  8.1000e-01,  8.2266e-01,
+          2.3449e-01,  8.7314e-01,  2.4384e-51,  1.7050e-06,  8.7314e-01,
+          7.6124e-01,  8.7314e-01,  3.4401e-05,  6.9276e-01,  9.8962e-06,
+          6.8484e-04,  1.7836e-03,  8.7269e-01,  8.6881e-01,  6.7910e-01,
+          9.8962e-06,  7.5133e-01,  2.4384e-51,  5.2423e-01,  8.3876e-01,
+          6.3390e-01,  8.6881e-01,  4.3850e-01,  1.5534e-01,  7.9708e-02,
+          1.6867e-02,  8.6678e-01,  7.2977e-01,  3.4401e-05,  3.8555e-04,
+          5.6358e-01,  7.4084e-01,  8.5171e-01,  1.3794e-01,  3.4401e-05,
+          8.2840e-01,  9.9895e-03,  6.8484e-04,  8.7314e-01,  3.2938e-02,
+          6.7910e-01,  8.7314e-01,  5.4424e-01,  2.4384e-51,  8.5537e-01,
+          4.6068e-01,  8.7314e-01,  8.7314e-01,  5.2423e-01,  7.5133e-01,
+          8.6172e-01,  1.7379e-01,  3.4401e-05,  2.4384e-51,  7.4683e-03,
+          6.3390e-01,  8.3983e-08,  1.7050e-06,  1.7836e-03,  1.7836e-03,
+          8.3983e-08,  8.3876e-01,  8.7314e-01,  8.7314e-01,  8.7314e-01,
+          7.8779e-01,  1.9319e-01,  9.8962e-06,  1.3097e-02],
+        [ 7.5652e-01,  6.7291e-01,  7.3504e-01,  6.2946e-01,  9.4740e-01,
+          8.8366e-01,  1.9911e-04,  9.5121e-02,  1.4797e-02,  9.0423e-01,
+          1.1409e-03,  6.2946e-01,  2.7666e-02,  8.3956e-01,  8.3956e-01,
+          5.4732e-02,  4.5281e-01,  3.4028e-44,  5.0353e-07,  8.9653e-01,
+          8.3956e-01,  6.9927e-01,  6.9490e-04,  7.9424e-01,  1.9911e-04,
+          2.9841e-05,  5.0353e-07,  8.8814e-01,  4.5281e-01,  1.8152e-01,
+          1.7664e-03,  8.5799e-01,  3.4028e-44,  3.7269e-01,  9.4740e-01,
+          4.3304e-01,  9.3005e-01,  7.7621e-01,  5.8132e-01,  1.3462e-01,
+          1.4797e-02,  8.9243e-01,  7.4601e-01,  3.4028e-44,  3.7166e-03,
+          5.8132e-01,  6.9927e-01,  9.4740e-01,  1.9862e-01,  6.6149e-06,
+          9.0423e-01,  6.8933e-03,  6.8933e-03,  8.9243e-01,  1.8469e-02,
+          8.6360e-01,  9.4740e-01,  7.6658e-01,  3.4028e-44,  9.2097e-01,
+          8.5212e-01,  3.1217e-01,  9.4740e-01,  8.4598e-01,  6.9927e-01,
+          8.5799e-01,  6.3522e-02,  6.8933e-03,  3.4028e-44,  8.3705e-02,
+          5.1031e-01,  8.6903e-05,  1.4797e-02,  3.4028e-44,  1.9911e-04,
+          2.3465e-01,  8.1844e-01,  8.5799e-01,  6.4447e-01,  8.8814e-01,
+          5.6427e-01,  4.1306e-01,  5.1284e-03,  3.3286e-02],
+        [ 8.8984e-01,  6.6331e-01,  2.5539e-03,  9.7589e-03,  8.8984e-01,
+          8.1326e-01,  2.8987e-79,  8.8835e-01,  8.0869e-07,  5.4031e-01,
+          2.7307e-06,  8.6377e-01,  2.7307e-06,  8.8984e-01,  7.2075e-01,
+          4.0277e-05,  8.3116e-01,  8.0869e-07,  2.8987e-79,  8.8984e-01,
+          8.8984e-01,  8.7277e-01,  1.6012e-11,  5.4031e-01,  2.8987e-79,
+          4.0277e-05,  2.2298e-02,  8.8498e-01,  8.4611e-01,  7.3730e-01,
+          2.6341e-08,  7.9197e-01,  2.8987e-79,  7.7991e-01,  3.5854e-01,
+          4.8247e-01,  8.8984e-01,  1.3045e-02,  7.6682e-01,  4.5034e-04,
+          1.8400e-01,  8.8984e-01,  8.3898e-01,  7.6177e-06,  1.7204e-09,
+          8.6853e-01,  8.8984e-01,  8.8835e-01,  7.5264e-01,  8.0869e-07,
+          8.8689e-01,  4.5175e-02,  1.5099e-04,  8.8984e-01,  1.8161e-07,
+          8.5259e-01,  8.8984e-01,  8.3116e-01,  2.8987e-79,  8.8984e-01,
+          8.5259e-01,  8.8689e-01,  8.8984e-01,  8.0306e-01,  6.4143e-01,
+          8.7980e-01,  2.3759e-01,  1.6012e-11,  1.8478e-05,  2.8987e-79,
+          8.6853e-01,  1.7204e-09,  1.6012e-11,  3.6809e-03,  2.8565e-02,
+          2.6703e-04,  8.8984e-01,  8.8984e-01,  8.8984e-01,  8.2261e-01,
+          8.1326e-01,  6.6331e-01,  4.0277e-05,  2.8987e-79],
+        [ 7.5166e-01,  3.9695e-01,  4.1194e-01,  1.3217e-01,  8.9687e-01,
+          7.1651e-01,  5.9995e-03,  5.8908e-01,  5.9995e-03,  6.0105e-01,
+          1.7252e-04,  7.3450e-01,  6.5948e-02,  8.2004e-01,  8.4023e-01,
+          5.6948e-02,  5.2546e-01,  1.6889e-02,  7.9459e-04,  8.4675e-01,
+          9.0967e-01,  6.2425e-01,  1.9434e-03,  7.8371e-01,  1.9434e-03,
+          5.9995e-03,  1.9434e-03,  8.9687e-01,  5.2546e-01,  3.6661e-01,
+          1.7374e-26,  8.7823e-01,  1.7374e-26,  7.0719e-01,  1.0000e+00,
+          1.3217e-01,  8.2004e-01,  2.5928e-01,  7.3450e-01,  2.7450e-01,
+          2.2924e-01,  1.0000e+00,  6.0105e-01,  1.7374e-26,  8.9684e-03,
+          4.7030e-01,  8.1307e-01,  1.0000e+00,  2.4418e-01,  1.9434e-03,
+          8.7203e-01,  1.7252e-04,  7.5572e-02,  6.5716e-01,  3.3870e-02,
+          4.2678e-01,  1.0000e+00,  5.1200e-01,  1.7374e-26,  1.0000e+00,
+          8.0595e-01,  7.6805e-01,  1.0000e+00,  7.9869e-01,  4.2678e-01,
+          6.8788e-01,  2.1449e-01,  1.7374e-26,  3.6666e-03,  3.3870e-02,
+          6.1278e-01,  3.6666e-03,  4.8592e-02,  3.3870e-02,  3.3870e-02,
+          6.5948e-02,  9.1635e-01,  8.2689e-01,  9.4865e-01,  7.0719e-01,
+          5.2546e-01,  5.1200e-01,  1.7374e-26,  1.7179e-01]],
+       dtype=torch.float64)
+after mean!!
+_clean_ps 84
+tensor([8.1286e-01, 6.1498e-01, 3.2185e-01, 1.6576e-01, 8.7707e-01, 7.9076e-01,
+        1.2397e-03, 4.4440e-01, 4.6957e-03, 7.1823e-01, 2.6323e-04, 7.5770e-01,
+        2.2097e-02, 8.3179e-01, 8.0454e-01, 6.9317e-02, 6.9483e-01, 3.3780e-03,
+        1.6004e-04, 8.6115e-01, 8.3175e-01, 7.7220e-01, 5.3454e-04, 7.2211e-01,
+        4.3760e-04, 1.3509e-03, 5.2066e-03, 8.5058e-01, 6.8831e-01, 4.3039e-01,
+        3.5526e-04, 6.7862e-01, 3.4748e-27, 6.3311e-01, 7.4207e-01, 4.5944e-01,
+        8.3722e-01, 2.9742e-01, 5.9727e-01, 1.4729e-01, 8.8981e-02, 8.8971e-01,
+        7.3283e-01, 8.4037e-06, 2.6141e-03, 6.0436e-01, 7.8851e-01, 8.9739e-01,
+        3.8979e-01, 3.9704e-04, 8.5821e-01, 1.2460e-02, 1.6661e-02, 8.2242e-01,
+        1.7056e-02, 7.2072e-01, 9.0198e-01, 5.4957e-01, 3.4748e-27, 8.9314e-01,
+        6.3175e-01, 7.2795e-01, 9.0198e-01, 7.5430e-01, 6.6208e-01, 8.1489e-01,
+        2.6100e-01, 1.3855e-03, 7.3702e-04, 2.5130e-02, 6.8501e-01, 7.5073e-04,
+        1.2685e-02, 7.8669e-03, 1.2958e-02, 1.0346e-01, 8.3472e-01, 8.4947e-01,
+        8.3112e-01, 8.1812e-01, 6.8783e-01, 3.5887e-01, 1.0357e-03, 4.3635e-02],
+       dtype=torch.float64)
+m
+tensor([ True,  True, False, False,  True, False, False, False, False,  True,
+        False,  True, False,  True,  True, False, False, False, False,  True,
+         True,  True, False,  True, False, False, False,  True,  True,  True,
+        False,  True, False, False,  True, False,  True,  True,  True, False,
+        False,  True, False, False, False,  True,  True, False, False, False,
+         True, False, False, False, False,  True,  True, False, False,  True,
+        False,  True,  True,  True,  True,  True,  True, False, False, False,
+         True, False, False, False, False, False,  True,  True,  True,  True,
+         True, False, False,  True])
+class: 9
+--- num of selected samples: 39
+--- num of selected corrupt samples: 39.0
+***********************************************
+clean_idx_len 101
+[3, 5, 9, 11, 13, 14, 15, 17, 20, 22, 31, 34, 37, 41, 45, 48, 49, 51, 57, 60, 61, 72, 80, 82, 86, 87, 91, 102, 108, 110, 115, 119, 120, 121, 122, 125, 126, 129, 131, 132, 136, 138, 141, 143, 149, 155, 164, 165, 166, 170, 174, 175, 178, 183, 185, 187, 188, 192, 193, 194, 196, 197, 1, 4, 8, 19, 25, 27, 30, 43, 53, 54, 58, 64, 65, 67, 73, 76, 79, 83, 84, 98, 106, 107, 113, 134, 135, 142, 145, 156, 157, 158, 159, 160, 168, 182, 186, 189, 190, 191, 199]
+clean_p
+tensor([0.5878, 0.7636, 0.6261, 0.6979, 0.8106, 0.7534, 0.8010, 0.7916, 0.7791,
+        0.7964, 0.7827, 0.7155, 0.7991, 0.7631, 0.7519, 0.7482, 0.7879, 0.5657,
+        0.7838, 0.8125, 0.2573, 0.5305, 0.6018, 0.7058, 0.4505, 0.8103, 0.4815,
+        0.6073, 0.8093, 0.8059, 0.8120, 0.8010, 0.8064, 0.8125, 0.8042, 0.1775,
+        0.3842, 0.7468, 0.7784, 0.7757, 0.6825, 0.8042, 0.7453, 0.8104, 0.7507,
+        0.4522, 0.6905, 0.7869, 0.7804, 0.6913, 0.5588, 0.8125, 0.7798, 0.7820,
+        0.7405, 0.7271, 0.4238, 0.7970, 0.8065, 0.7822, 0.8120, 0.6693, 0.8129,
+        0.6150, 0.8771, 0.7182, 0.7577, 0.8318, 0.8045, 0.8612, 0.8317, 0.7722,
+        0.7221, 0.8506, 0.6883, 0.4304, 0.6786, 0.7421, 0.8372, 0.2974, 0.5973,
+        0.8897, 0.6044, 0.7885, 0.8582, 0.7207, 0.9020, 0.8931, 0.7280, 0.9020,
+        0.7543, 0.6621, 0.8149, 0.2610, 0.6850, 0.8347, 0.8495, 0.8311, 0.8181,
+        0.6878, 0.0436])
+purified buffer update!!
+update!!
+*nbatch 101
+#normal data: 125.0, 	 #corrupted data: 75.0
+buffer_corrupts tensor(75.)
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+update!!
+*nbatch 1
+delay buffer full
+total_train_epoch 100 epoch_i 0
+total_train_epoch 100 epoch_i 1
+total_train_epoch 100 epoch_i 2
+total_train_epoch 100 epoch_i 3
+total_train_epoch 100 epoch_i 4
+total_train_epoch 100 epoch_i 5
+total_train_epoch 100 epoch_i 6
+total_train_epoch 100 epoch_i 7
+total_train_epoch 100 epoch_i 8
+total_train_epoch 100 epoch_i 9
+total_train_epoch 100 epoch_i 10
+total_train_epoch 100 epoch_i 11
+total_train_epoch 100 epoch_i 12
+total_train_epoch 100 epoch_i 13
+total_train_epoch 100 epoch_i 14
+total_train_epoch 100 epoch_i 15
+total_train_epoch 100 epoch_i 16
+total_train_epoch 100 epoch_i 17
+total_train_epoch 100 epoch_i 18
+total_train_epoch 100 epoch_i 19
+total_train_epoch 100 epoch_i 20
+total_train_epoch 100 epoch_i 21
+total_train_epoch 100 epoch_i 22
+total_train_epoch 100 epoch_i 23
+total_train_epoch 100 epoch_i 24
+total_train_epoch 100 epoch_i 25
+total_train_epoch 100 epoch_i 26
+total_train_epoch 100 epoch_i 27
+total_train_epoch 100 epoch_i 28
+total_train_epoch 100 epoch_i 29
+total_train_epoch 100 epoch_i 30
+total_train_epoch 100 epoch_i 31
+total_train_epoch 100 epoch_i 32
+total_train_epoch 100 epoch_i 33
+total_train_epoch 100 epoch_i 34
+total_train_epoch 100 epoch_i 35
+total_train_epoch 100 epoch_i 36
+total_train_epoch 100 epoch_i 37
+total_train_epoch 100 epoch_i 38
+total_train_epoch 100 epoch_i 39
+total_train_epoch 100 epoch_i 40
+total_train_epoch 100 epoch_i 41
+total_train_epoch 100 epoch_i 42
+total_train_epoch 100 epoch_i 43
+total_train_epoch 100 epoch_i 44
+total_train_epoch 100 epoch_i 45
+total_train_epoch 100 epoch_i 46
+total_train_epoch 100 epoch_i 47
+total_train_epoch 100 epoch_i 48
+total_train_epoch 100 epoch_i 49
+total_train_epoch 100 epoch_i 50
+total_train_epoch 100 epoch_i 51
+total_train_epoch 100 epoch_i 52
+total_train_epoch 100 epoch_i 53
+total_train_epoch 100 epoch_i 54
+total_train_epoch 100 epoch_i 55
+total_train_epoch 100 epoch_i 56
+total_train_epoch 100 epoch_i 57
+total_train_epoch 100 epoch_i 58
+total_train_epoch 100 epoch_i 59
+total_train_epoch 100 epoch_i 60
+total_train_epoch 100 epoch_i 61
+total_train_epoch 100 epoch_i 62
+total_train_epoch 100 epoch_i 63
+total_train_epoch 100 epoch_i 64
+total_train_epoch 100 epoch_i 65
+total_train_epoch 100 epoch_i 66
+total_train_epoch 100 epoch_i 67
+total_train_epoch 100 epoch_i 68
+total_train_epoch 100 epoch_i 69
+total_train_epoch 100 epoch_i 70
+total_train_epoch 100 epoch_i 71
+total_train_epoch 100 epoch_i 72
+total_train_epoch 100 epoch_i 73
+total_train_epoch 100 epoch_i 74
+total_train_epoch 100 epoch_i 75
+total_train_epoch 100 epoch_i 76
+total_train_epoch 100 epoch_i 77
+total_train_epoch 100 epoch_i 78
+total_train_epoch 100 epoch_i 79
+total_train_epoch 100 epoch_i 80
+total_train_epoch 100 epoch_i 81
+total_train_epoch 100 epoch_i 82
+total_train_epoch 100 epoch_i 83
+total_train_epoch 100 epoch_i 84
+total_train_epoch 100 epoch_i 85
+total_train_epoch 100 epoch_i 86
+total_train_epoch 100 epoch_i 87
+total_train_epoch 100 epoch_i 88
+total_train_epoch 100 epoch_i 89
+total_train_epoch 100 epoch_i 90
+total_train_epoch 100 epoch_i 91
+total_train_epoch 100 epoch_i 92
+total_train_epoch 100 epoch_i 93
+total_train_epoch 100 epoch_i 94
+total_train_epoch 100 epoch_i 95
+total_train_epoch 100 epoch_i 96
+total_train_epoch 100 epoch_i 97
+total_train_epoch 100 epoch_i 98
+total_train_epoch 100 epoch_i 99

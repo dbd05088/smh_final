@@ -1,0 +1,80 @@
+E_max: 5
+asymmetric_noise: false
+base_batch_size: 500
+base_train_epochs: 30
+batch_iter: 1
+batch_size: 10
+clip_grad:
+  options:
+    clip_value: 0.5
+  type: value
+corruption_percent: 0.4
+data_root: ./data
+data_schedule:
+- subsets:
+  - - cifar10
+    - 7
+  - - cifar10
+    - 6
+- subsets:
+  - - cifar10
+    - 2
+  - - cifar10
+    - 3
+- subsets:
+  - - cifar10
+    - 0
+  - - cifar10
+    - 1
+- subsets:
+  - - cifar10
+    - 5
+  - - cifar10
+    - 9
+- subsets:
+  - - cifar10
+    - 8
+  - - cifar10
+    - 4
+delayed_buffer_q_poa: 0.0
+delayed_buffer_size: 200
+device: cuda
+eval: true
+eval_batch_size: 256
+eval_num_workers: 4
+expert_batch_size: 500
+expert_train_epochs: 40
+ft_batch_size: 16
+ft_epochs: 50
+log_dir: logs/smh
+lr_scheduler:
+  options:
+    eta_min: 0
+    last_epoch: -1
+  type: CosineAnnealingLR
+lr_scheduler_ft:
+  options:
+    gamma: 0.1
+    step_size: 300
+  type: StepLR
+nb_classes: 10
+net: resnet_simclr18
+num_workers: 16
+optimizer:
+  options:
+    lr: 0.0003
+  type: Adam
+optimizer_ft:
+  options:
+    lr: 0.002
+  type: Adam
+projection_out_dim: 256
+purified_buffer_q_poa: 0.0
+purified_buffer_size: 150
+random_seed: 0
+temperature: 0.5
+use_cosine_similarity: true
+x_c: 3
+x_h: 32
+x_w: 32
+y_c: 10

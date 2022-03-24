@@ -1,0 +1,13 @@
+[INFO] main.py:214 > Set the device (cuda)
+[INFO] main.py:259 > Using train-transforms Compose(
+    RandomHorizontalFlip(p=0.5)
+    RandomCrop(size=(32, 32), padding=4)
+    ToTensor()
+    Normalize(mean=(0.4914, 0.482158, 0.4465231), std=(0.247032, 0.243485, 0.2615877))
+)
+[INFO] augment.py:18 > cifar10: autoaugmentation is applied
+[INFO] main.py:282 > Using train-transforms [AutoAugment CIFAR10 Policy]
+[INFO] main.py:292 > [1] Select a CIL method (rm)
+[INFO] method_manager.py:48 > CIL Scenario: 
+[INFO] main.py:298 > [2] Incrementally training 5 tasks
+[INFO] main.py:308 > [2-1] Prepare a datalist for the current task

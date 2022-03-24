@@ -1,0 +1,2 @@
+data/cifar10/cifar-10-python.tar.gz filter=lfs diff=lfs merge=lfs -text
+logs/smh/ckpts/ckpt-model filter=lfs diff=lfs merge=lfs -text

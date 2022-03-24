@@ -1,0 +1,562 @@
+Remove the tensorboard dir
+noisy len 800
+labeled len 800
+noisy len 800
+labeled len 800
+noisy len 800
+labeled len 800
+noisy len 800
+labeled len 800
+noisy len 800
+labeled len 800
+[INFO] main.py:188 > Set the device (cuda)
+[INFO] main.py:233 > Using train-transforms Compose(
+    RandomHorizontalFlip(p=0.5)
+    RandomCrop(size=(32, 32), padding=4)
+    ToTensor()
+    Normalize(mean=(0.4914, 0.482158, 0.4465231), std=(0.247032, 0.243485, 0.2615877))
+)
+[INFO] augment.py:18 > cifar10: autoaugmentation is applied
+[INFO] main.py:256 > Using train-transforms [AutoAugment CIFAR10 Policy]
+[INFO] main.py:266 > [1] Select a CIL method (rm)
+[INFO] method_manager.py:48 > CIL Scenario: 
+n_tasks: 5
+n_init_cls: 10
+n_cls_a_task: 2
+total cls: 10
+[INFO] main.py:272 > [2] Incrementally training 5 tasks
+
+##################################################
+# Task 0 iteration
+##################################################
+
+[INFO] main.py:282 > [2-1] Prepare a datalist for the current task
+*cur labeled 800
+*batch 128
+*labeled len 800
+list len 800
+dataset len 800
+batch size 128
+loader len 12
+total : 50  current step :  0
+total : 50  current step :  1
+total : 50  current step :  2
+total : 50  current step :  3
+total : 50  current step :  4
+total : 50  current step :  5
+total : 50  current step :  6
+total : 50  current step :  7
+total : 50  current step :  8
+total : 50  current step :  9
+total : 50  current step :  10
+total : 50  current step :  11
+total : 50  current step :  12
+total : 50  current step :  13
+total : 50  current step :  14
+total : 50  current step :  15
+total : 50  current step :  16
+total : 50  current step :  17
+total : 50  current step :  18
+total : 50  current step :  19
+total : 50  current step :  20
+total : 50  current step :  21
+total : 50  current step :  22
+total : 50  current step :  23
+total : 50  current step :  24
+total : 50  current step :  25
+total : 50  current step :  26
+total : 50  current step :  27
+total : 50  current step :  28
+total : 50  current step :  29
+total : 50  current step :  30
+total : 50  current step :  31
+total : 50  current step :  32
+total : 50  current step :  33
+total : 50  current step :  34
+total : 50  current step :  35
+total : 50  current step :  36
+total : 50  current step :  37
+total : 50  current step :  38
+total : 50  current step :  39
+total : 50  current step :  40
+total : 50  current step :  41
+total : 50  current step :  42
+total : 50  current step :  43
+total : 50  current step :  44
+total : 50  current step :  45
+total : 50  current step :  46
+total : 50  current step :  47
+total : 50  current step :  48
+total : 50  current step :  49
+[INFO] main.py:316 > [2-2] Set environment for the current task
+[INFO] finetune.py:104 > Apply before_task
+[INFO] finetune.py:146 > Reset the optimizer and scheduler states
+[INFO] finetune.py:152 > Increasing the head of fc 10 -> 10
+[INFO] main.py:324 > [2-3] Start to train under online
+[INFO] main.py:339 > Train over streamed data once
+batch_size : 128 stream_batch_size : 64 memory_batch_size : 42
+[INFO] rainbow_memory.py:119 > Streamed samples: 800
+[INFO] rainbow_memory.py:120 > In-memory samples: 0
+[INFO] rainbow_memory.py:121 > Pseudo samples: 9984
+[INFO] rainbow_memory.py:127 > Train samples: 10784
+[INFO] rainbow_memory.py:128 > Test samples: 2000
+[INFO] rainbow_memory.py:183 > Task 0 | Epoch 1/1 | train_loss 1.0059 | train_acc 0.4967 | test_loss 0.7377 | test_acc 0.5000 | lr 0.0050
+[INFO] finetune.py:169 > Update memory over 10 classes by uncertainty
+uncertainty
+[WARNING] finetune.py:736 > Fill the unused slots by breaking the equilibrium.
+[INFO] finetune.py:223 > Memory statistic
+[INFO] finetune.py:225 > 
+automobile    252
+truck         248
+Name: klass, dtype: int64
+[INFO] main.py:355 > Train over memory
+batch_size : 64 stream_batch_size : 22 memory_batch_size : 21
+[INFO] rainbow_memory.py:119 > Streamed samples: 0
+[INFO] rainbow_memory.py:120 > In-memory samples: 500
+[INFO] rainbow_memory.py:121 > Pseudo samples: 0
+[INFO] rainbow_memory.py:127 > Train samples: 500
+[INFO] rainbow_memory.py:128 > Test samples: 2000
+[INFO] rainbow_memory.py:183 > Task 0 | Epoch 1/5 | train_loss 0.9672 | train_acc 0.5200 | test_loss 0.7865 | test_acc 0.4990 | lr 0.0050
+[INFO] rainbow_memory.py:183 > Task 0 | Epoch 2/5 | train_loss 3.6250 | train_acc 0.5100 | test_loss 103.9908 | test_acc 0.5000 | lr 0.0500
+[INFO] rainbow_memory.py:183 > Task 0 | Epoch 3/5 | train_loss 2.3294 | train_acc 0.4780 | test_loss 1.1808 | test_acc 0.5000 | lr 0.0500
+[INFO] rainbow_memory.py:183 > Task 0 | Epoch 4/5 | train_loss 1.1428 | train_acc 0.5160 | test_loss 0.9141 | test_acc 0.5000 | lr 0.0253
+[INFO] rainbow_memory.py:183 > Task 0 | Epoch 5/5 | train_loss 1.1709 | train_acc 0.5200 | test_loss 1.7222 | test_acc 0.5000 | lr 0.0500
+[INFO] finetune.py:157 > Apply after_task
+[WARNING] finetune.py:230 > Already updated the memory during this iter (0)
+[INFO] main.py:365 > [2-4] Update the information for the current task
+[INFO] finetune.py:157 > Apply after_task
+[WARNING] finetune.py:230 > Already updated the memory during this iter (0)
+[INFO] main.py:372 > [2-5] Report task result
+
+##################################################
+# Task 1 iteration
+##################################################
+
+[INFO] main.py:282 > [2-1] Prepare a datalist for the current task
+*cur labeled 800
+*batch 128
+*labeled len 800
+list len 800
+dataset len 800
+batch size 128
+loader len 12
+total : 50  current step :  0
+total : 50  current step :  1
+total : 50  current step :  2
+total : 50  current step :  3
+total : 50  current step :  4
+total : 50  current step :  5
+total : 50  current step :  6
+total : 50  current step :  7
+total : 50  current step :  8
+total : 50  current step :  9
+total : 50  current step :  10
+total : 50  current step :  11
+total : 50  current step :  12
+total : 50  current step :  13
+total : 50  current step :  14
+total : 50  current step :  15
+total : 50  current step :  16
+total : 50  current step :  17
+total : 50  current step :  18
+total : 50  current step :  19
+total : 50  current step :  20
+total : 50  current step :  21
+total : 50  current step :  22
+total : 50  current step :  23
+total : 50  current step :  24
+total : 50  current step :  25
+total : 50  current step :  26
+total : 50  current step :  27
+total : 50  current step :  28
+total : 50  current step :  29
+total : 50  current step :  30
+total : 50  current step :  31
+total : 50  current step :  32
+total : 50  current step :  33
+total : 50  current step :  34
+total : 50  current step :  35
+total : 50  current step :  36
+total : 50  current step :  37
+total : 50  current step :  38
+total : 50  current step :  39
+total : 50  current step :  40
+total : 50  current step :  41
+total : 50  current step :  42
+total : 50  current step :  43
+total : 50  current step :  44
+total : 50  current step :  45
+total : 50  current step :  46
+total : 50  current step :  47
+total : 50  current step :  48
+total : 50  current step :  49
+[INFO] main.py:316 > [2-2] Set environment for the current task
+[INFO] finetune.py:104 > Apply before_task
+[INFO] finetune.py:146 > Reset the optimizer and scheduler states
+[INFO] finetune.py:152 > Increasing the head of fc 10 -> 10
+[INFO] main.py:324 > [2-3] Start to train under online
+[INFO] main.py:339 > Train over streamed data once
+batch_size : 128 stream_batch_size : 44 memory_batch_size : 42
+[INFO] rainbow_memory.py:119 > Streamed samples: 800
+[INFO] rainbow_memory.py:120 > In-memory samples: 500
+[INFO] rainbow_memory.py:121 > Pseudo samples: 9984
+[INFO] rainbow_memory.py:127 > Train samples: 11284
+[INFO] rainbow_memory.py:128 > Test samples: 2000
+[INFO] rainbow_memory.py:183 > Task 1 | Epoch 1/1 | train_loss 2.0249 | train_acc 0.3170 | test_loss 1.6453 | test_acc 0.4995 | lr 0.0050
+[INFO] finetune.py:169 > Update memory over 10 classes by uncertainty
+uncertainty
+[INFO] finetune.py:679 > Compute uncertainty by vr_randaug!
+[WARNING] finetune.py:639 > Fill the unused slots by breaking the equilibrium.
+[INFO] finetune.py:223 > Memory statistic
+[INFO] finetune.py:225 > 
+bird          150
+airplane      131
+truck         110
+automobile    109
+Name: klass, dtype: int64
+[INFO] main.py:355 > Train over memory
+batch_size : 64 stream_batch_size : 22 memory_batch_size : 21
+[INFO] rainbow_memory.py:119 > Streamed samples: 0
+[INFO] rainbow_memory.py:120 > In-memory samples: 500
+[INFO] rainbow_memory.py:121 > Pseudo samples: 0
+[INFO] rainbow_memory.py:127 > Train samples: 500
+[INFO] rainbow_memory.py:128 > Test samples: 2000
+[INFO] rainbow_memory.py:183 > Task 1 | Epoch 1/5 | train_loss 1.5373 | train_acc 0.3200 | test_loss 1.2010 | test_acc 0.4970 | lr 0.0050
+[INFO] rainbow_memory.py:183 > Task 1 | Epoch 2/5 | train_loss 1.7714 | train_acc 0.2620 | test_loss 1.1417 | test_acc 0.4960 | lr 0.0500
+[INFO] rainbow_memory.py:183 > Task 1 | Epoch 3/5 | train_loss 1.5786 | train_acc 0.2980 | test_loss 1.4737 | test_acc 0.2850 | lr 0.0500
+[INFO] rainbow_memory.py:183 > Task 1 | Epoch 4/5 | train_loss 1.4392 | train_acc 0.3080 | test_loss 1.2107 | test_acc 0.7065 | lr 0.0253
+[INFO] rainbow_memory.py:183 > Task 1 | Epoch 5/5 | train_loss 1.4564 | train_acc 0.3060 | test_loss 1.1990 | test_acc 0.5540 | lr 0.0500
+[INFO] finetune.py:157 > Apply after_task
+[WARNING] finetune.py:230 > Already updated the memory during this iter (1)
+[INFO] main.py:365 > [2-4] Update the information for the current task
+[INFO] finetune.py:157 > Apply after_task
+[WARNING] finetune.py:230 > Already updated the memory during this iter (1)
+[INFO] main.py:372 > [2-5] Report task result
+
+##################################################
+# Task 2 iteration
+##################################################
+
+[INFO] main.py:282 > [2-1] Prepare a datalist for the current task
+*cur labeled 800
+*batch 128
+*labeled len 800
+list len 800
+dataset len 800
+batch size 128
+loader len 12
+total : 50  current step :  0
+total : 50  current step :  1
+total : 50  current step :  2
+total : 50  current step :  3
+total : 50  current step :  4
+total : 50  current step :  5
+total : 50  current step :  6
+total : 50  current step :  7
+total : 50  current step :  8
+total : 50  current step :  9
+total : 50  current step :  10
+total : 50  current step :  11
+total : 50  current step :  12
+total : 50  current step :  13
+total : 50  current step :  14
+total : 50  current step :  15
+total : 50  current step :  16
+total : 50  current step :  17
+total : 50  current step :  18
+total : 50  current step :  19
+total : 50  current step :  20
+total : 50  current step :  21
+total : 50  current step :  22
+total : 50  current step :  23
+total : 50  current step :  24
+total : 50  current step :  25
+total : 50  current step :  26
+total : 50  current step :  27
+total : 50  current step :  28
+total : 50  current step :  29
+total : 50  current step :  30
+total : 50  current step :  31
+total : 50  current step :  32
+total : 50  current step :  33
+total : 50  current step :  34
+total : 50  current step :  35
+total : 50  current step :  36
+total : 50  current step :  37
+total : 50  current step :  38
+total : 50  current step :  39
+total : 50  current step :  40
+total : 50  current step :  41
+total : 50  current step :  42
+total : 50  current step :  43
+total : 50  current step :  44
+total : 50  current step :  45
+total : 50  current step :  46
+total : 50  current step :  47
+total : 50  current step :  48
+total : 50  current step :  49
+[INFO] main.py:316 > [2-2] Set environment for the current task
+[INFO] finetune.py:104 > Apply before_task
+[INFO] finetune.py:146 > Reset the optimizer and scheduler states
+[INFO] finetune.py:152 > Increasing the head of fc 10 -> 10
+[INFO] main.py:324 > [2-3] Start to train under online
+[INFO] main.py:339 > Train over streamed data once
+batch_size : 128 stream_batch_size : 44 memory_batch_size : 42
+[INFO] rainbow_memory.py:119 > Streamed samples: 800
+[INFO] rainbow_memory.py:120 > In-memory samples: 500
+[INFO] rainbow_memory.py:121 > Pseudo samples: 9984
+[INFO] rainbow_memory.py:127 > Train samples: 11284
+[INFO] rainbow_memory.py:128 > Test samples: 2000
+[INFO] rainbow_memory.py:183 > Task 2 | Epoch 1/1 | train_loss 2.1515 | train_acc 0.2813 | test_loss 1.7506 | test_acc 0.5025 | lr 0.0050
+[INFO] finetune.py:169 > Update memory over 10 classes by uncertainty
+uncertainty
+[INFO] finetune.py:679 > Compute uncertainty by vr_randaug!
+[WARNING] finetune.py:639 > Fill the unused slots by breaking the equilibrium.
+[INFO] finetune.py:223 > Memory statistic
+[INFO] finetune.py:225 > 
+dog           122
+cat           114
+automobile     69
+bird           69
+truck          64
+airplane       62
+Name: klass, dtype: int64
+[INFO] main.py:355 > Train over memory
+batch_size : 64 stream_batch_size : 22 memory_batch_size : 21
+[INFO] rainbow_memory.py:119 > Streamed samples: 0
+[INFO] rainbow_memory.py:120 > In-memory samples: 500
+[INFO] rainbow_memory.py:121 > Pseudo samples: 0
+[INFO] rainbow_memory.py:127 > Train samples: 500
+[INFO] rainbow_memory.py:128 > Test samples: 2000
+[INFO] rainbow_memory.py:183 > Task 2 | Epoch 1/5 | train_loss 1.9009 | train_acc 0.2360 | test_loss 1.6381 | test_acc 0.4775 | lr 0.0050
+[INFO] rainbow_memory.py:183 > Task 2 | Epoch 2/5 | train_loss 1.8384 | train_acc 0.1940 | test_loss 1.5842 | test_acc 0.4955 | lr 0.0500
+[INFO] rainbow_memory.py:183 > Task 2 | Epoch 3/5 | train_loss 1.8294 | train_acc 0.2140 | test_loss 1.8391 | test_acc 0.0485 | lr 0.0500
+[INFO] rainbow_memory.py:183 > Task 2 | Epoch 4/5 | train_loss 1.7790 | train_acc 0.2440 | test_loss 1.2620 | test_acc 0.4795 | lr 0.0253
+[INFO] rainbow_memory.py:183 > Task 2 | Epoch 5/5 | train_loss 1.8521 | train_acc 0.2480 | test_loss 1.2621 | test_acc 0.4580 | lr 0.0500
+[INFO] finetune.py:157 > Apply after_task
+[WARNING] finetune.py:230 > Already updated the memory during this iter (2)
+[INFO] main.py:365 > [2-4] Update the information for the current task
+[INFO] finetune.py:157 > Apply after_task
+[WARNING] finetune.py:230 > Already updated the memory during this iter (2)
+[INFO] main.py:372 > [2-5] Report task result
+
+##################################################
+# Task 3 iteration
+##################################################
+
+[INFO] main.py:282 > [2-1] Prepare a datalist for the current task
+*cur labeled 800
+*batch 128
+*labeled len 800
+list len 800
+dataset len 800
+batch size 128
+loader len 12
+total : 50  current step :  0
+total : 50  current step :  1
+total : 50  current step :  2
+total : 50  current step :  3
+total : 50  current step :  4
+total : 50  current step :  5
+total : 50  current step :  6
+total : 50  current step :  7
+total : 50  current step :  8
+total : 50  current step :  9
+total : 50  current step :  10
+total : 50  current step :  11
+total : 50  current step :  12
+total : 50  current step :  13
+total : 50  current step :  14
+total : 50  current step :  15
+total : 50  current step :  16
+total : 50  current step :  17
+total : 50  current step :  18
+total : 50  current step :  19
+total : 50  current step :  20
+total : 50  current step :  21
+total : 50  current step :  22
+total : 50  current step :  23
+total : 50  current step :  24
+total : 50  current step :  25
+total : 50  current step :  26
+total : 50  current step :  27
+total : 50  current step :  28
+total : 50  current step :  29
+total : 50  current step :  30
+total : 50  current step :  31
+total : 50  current step :  32
+total : 50  current step :  33
+total : 50  current step :  34
+total : 50  current step :  35
+total : 50  current step :  36
+total : 50  current step :  37
+total : 50  current step :  38
+total : 50  current step :  39
+total : 50  current step :  40
+total : 50  current step :  41
+total : 50  current step :  42
+total : 50  current step :  43
+total : 50  current step :  44
+total : 50  current step :  45
+total : 50  current step :  46
+total : 50  current step :  47
+total : 50  current step :  48
+total : 50  current step :  49
+[INFO] main.py:316 > [2-2] Set environment for the current task
+[INFO] finetune.py:104 > Apply before_task
+[INFO] finetune.py:146 > Reset the optimizer and scheduler states
+[INFO] finetune.py:152 > Increasing the head of fc 10 -> 10
+[INFO] main.py:324 > [2-3] Start to train under online
+[INFO] main.py:339 > Train over streamed data once
+batch_size : 128 stream_batch_size : 44 memory_batch_size : 42
+[INFO] rainbow_memory.py:119 > Streamed samples: 800
+[INFO] rainbow_memory.py:120 > In-memory samples: 500
+[INFO] rainbow_memory.py:121 > Pseudo samples: 9984
+[INFO] rainbow_memory.py:127 > Train samples: 11284
+[INFO] rainbow_memory.py:128 > Test samples: 2000
+[INFO] rainbow_memory.py:183 > Task 3 | Epoch 1/1 | train_loss 2.1675 | train_acc 0.2148 | test_loss 1.6392 | test_acc 0.6145 | lr 0.0050
+[INFO] finetune.py:169 > Update memory over 10 classes by uncertainty
+uncertainty
+[INFO] finetune.py:679 > Compute uncertainty by vr_randaug!
+[WARNING] finetune.py:639 > Fill the unused slots by breaking the equilibrium.
+[INFO] finetune.py:223 > Memory statistic
+[INFO] finetune.py:225 > 
+deer          90
+horse         86
+dog           60
+cat           57
+automobile    53
+bird          52
+truck         52
+airplane      50
+Name: klass, dtype: int64
+[INFO] main.py:355 > Train over memory
+batch_size : 64 stream_batch_size : 22 memory_batch_size : 21
+[INFO] rainbow_memory.py:119 > Streamed samples: 0
+[INFO] rainbow_memory.py:120 > In-memory samples: 500
+[INFO] rainbow_memory.py:121 > Pseudo samples: 0
+[INFO] rainbow_memory.py:127 > Train samples: 500
+[INFO] rainbow_memory.py:128 > Test samples: 2000
+[INFO] rainbow_memory.py:183 > Task 3 | Epoch 1/5 | train_loss 2.1286 | train_acc 0.2180 | test_loss 1.9017 | test_acc 0.4390 | lr 0.0050
+[INFO] rainbow_memory.py:183 > Task 3 | Epoch 2/5 | train_loss 2.1077 | train_acc 0.1940 | test_loss 1.4664 | test_acc 0.4985 | lr 0.0500
+[INFO] rainbow_memory.py:183 > Task 3 | Epoch 3/5 | train_loss 2.1140 | train_acc 0.1900 | test_loss 1.7798 | test_acc 0.4830 | lr 0.0500
+[INFO] rainbow_memory.py:183 > Task 3 | Epoch 4/5 | train_loss 2.0586 | train_acc 0.2040 | test_loss 1.4254 | test_acc 0.4725 | lr 0.0253
+[INFO] rainbow_memory.py:183 > Task 3 | Epoch 5/5 | train_loss 2.0583 | train_acc 0.2280 | test_loss 1.3577 | test_acc 0.5480 | lr 0.0500
+[INFO] finetune.py:157 > Apply after_task
+[WARNING] finetune.py:230 > Already updated the memory during this iter (3)
+[INFO] main.py:365 > [2-4] Update the information for the current task
+[INFO] finetune.py:157 > Apply after_task
+[WARNING] finetune.py:230 > Already updated the memory during this iter (3)
+[INFO] main.py:372 > [2-5] Report task result
+
+##################################################
+# Task 4 iteration
+##################################################
+
+[INFO] main.py:282 > [2-1] Prepare a datalist for the current task
+*cur labeled 800
+*batch 128
+*labeled len 800
+list len 800
+dataset len 800
+batch size 128
+loader len 12
+total : 50  current step :  0
+total : 50  current step :  1
+total : 50  current step :  2
+total : 50  current step :  3
+total : 50  current step :  4
+total : 50  current step :  5
+total : 50  current step :  6
+total : 50  current step :  7
+total : 50  current step :  8
+total : 50  current step :  9
+total : 50  current step :  10
+total : 50  current step :  11
+total : 50  current step :  12
+total : 50  current step :  13
+total : 50  current step :  14
+total : 50  current step :  15
+total : 50  current step :  16
+total : 50  current step :  17
+total : 50  current step :  18
+total : 50  current step :  19
+total : 50  current step :  20
+total : 50  current step :  21
+total : 50  current step :  22
+total : 50  current step :  23
+total : 50  current step :  24
+total : 50  current step :  25
+total : 50  current step :  26
+total : 50  current step :  27
+total : 50  current step :  28
+total : 50  current step :  29
+total : 50  current step :  30
+total : 50  current step :  31
+total : 50  current step :  32
+total : 50  current step :  33
+total : 50  current step :  34
+total : 50  current step :  35
+total : 50  current step :  36
+total : 50  current step :  37
+total : 50  current step :  38
+total : 50  current step :  39
+total : 50  current step :  40
+total : 50  current step :  41
+total : 50  current step :  42
+total : 50  current step :  43
+total : 50  current step :  44
+total : 50  current step :  45
+total : 50  current step :  46
+total : 50  current step :  47
+total : 50  current step :  48
+total : 50  current step :  49
+[INFO] main.py:316 > [2-2] Set environment for the current task
+[INFO] finetune.py:104 > Apply before_task
+[INFO] finetune.py:146 > Reset the optimizer and scheduler states
+[INFO] finetune.py:152 > Increasing the head of fc 10 -> 10
+[INFO] main.py:324 > [2-3] Start to train under online
+[INFO] main.py:339 > Train over streamed data once
+batch_size : 128 stream_batch_size : 44 memory_batch_size : 42
+[INFO] rainbow_memory.py:119 > Streamed samples: 800
+[INFO] rainbow_memory.py:120 > In-memory samples: 500
+[INFO] rainbow_memory.py:121 > Pseudo samples: 9984
+[INFO] rainbow_memory.py:127 > Train samples: 11284
+[INFO] rainbow_memory.py:128 > Test samples: 2000
+[INFO] rainbow_memory.py:183 > Task 4 | Epoch 1/1 | train_loss 2.2379 | train_acc 0.2465 | test_loss 1.8993 | test_acc 0.8060 | lr 0.0050
+[INFO] finetune.py:169 > Update memory over 10 classes by uncertainty
+uncertainty
+[INFO] finetune.py:679 > Compute uncertainty by vr_randaug!
+[INFO] finetune.py:223 > Memory statistic
+[INFO] finetune.py:225 > 
+airplane      50
+automobile    50
+bird          50
+cat           50
+deer          50
+dog           50
+frog          50
+horse         50
+ship          50
+truck         50
+Name: klass, dtype: int64
+[INFO] main.py:355 > Train over memory
+batch_size : 64 stream_batch_size : 22 memory_batch_size : 21
+[INFO] rainbow_memory.py:119 > Streamed samples: 0
+[INFO] rainbow_memory.py:120 > In-memory samples: 500
+[INFO] rainbow_memory.py:121 > Pseudo samples: 0
+[INFO] rainbow_memory.py:127 > Train samples: 500
+[INFO] rainbow_memory.py:128 > Test samples: 2000
+[INFO] rainbow_memory.py:183 > Task 4 | Epoch 1/5 | train_loss 2.2938 | train_acc 0.1380 | test_loss 1.9418 | test_acc 0.7760 | lr 0.0050
+[INFO] rainbow_memory.py:183 > Task 4 | Epoch 2/5 | train_loss 2.3122 | train_acc 0.1220 | test_loss 2.1074 | test_acc 0.0145 | lr 0.0500
+[INFO] rainbow_memory.py:183 > Task 4 | Epoch 3/5 | train_loss 2.2696 | train_acc 0.1600 | test_loss 1.8466 | test_acc 0.4795 | lr 0.0500
+[INFO] rainbow_memory.py:183 > Task 4 | Epoch 4/5 | train_loss 2.2210 | train_acc 0.1600 | test_loss 1.7859 | test_acc 0.3440 | lr 0.0253
+[INFO] rainbow_memory.py:183 > Task 4 | Epoch 5/5 | train_loss 2.2618 | train_acc 0.1660 | test_loss 1.7365 | test_acc 0.6790 | lr 0.0500
+[INFO] finetune.py:157 > Apply after_task
+[WARNING] finetune.py:230 > Already updated the memory during this iter (4)
+[INFO] main.py:365 > [2-4] Update the information for the current task
+[INFO] finetune.py:157 > Apply after_task
+[WARNING] finetune.py:230 > Already updated the memory during this iter (4)
+[INFO] main.py:372 > [2-5] Report task result
+[INFO] main.py:399 > ======== Summary =======
+[INFO] main.py:401 > A_last 0.776 | A_avg 0.6052 | F_last 0.2723749987781048 | I_last -0.776

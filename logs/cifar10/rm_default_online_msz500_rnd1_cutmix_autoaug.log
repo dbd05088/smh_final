@@ -1,0 +1,64 @@
+[INFO] main.py:198 > Set the device (cuda)
+[INFO] main.py:243 > Using train-transforms Compose(
+    RandomHorizontalFlip(p=0.5)
+    RandomCrop(size=(32, 32), padding=4)
+    ToTensor()
+    Normalize(mean=(0.4914, 0.482158, 0.4465231), std=(0.247032, 0.243485, 0.2615877))
+)
+[INFO] augment.py:18 > cifar10: autoaugmentation is applied
+[INFO] main.py:266 > Using train-transforms [AutoAugment CIFAR10 Policy]
+[INFO] main.py:276 > [1] Select a CIL method (rm)
+[INFO] method_manager.py:48 > CIL Scenario: 
+[INFO] main.py:282 > [2] Incrementally training 5 tasks
+[INFO] main.py:292 > [2-1] Prepare a datalist for the current task
+[INFO] main.py:324 > [2-2] Set environment for the current task
+[INFO] finetune.py:104 > Apply before_task
+[INFO] finetune.py:146 > Reset the optimizer and scheduler states
+[INFO] finetune.py:152 > Increasing the head of fc 10 -> 10
+[INFO] main.py:332 > [2-3] Start to train under online
+[INFO] main.py:347 > Train over streamed data once
+[INFO] rainbow_memory.py:117 > Streamed samples: 400
+[INFO] rainbow_memory.py:118 > In-memory samples: 0
+[INFO] rainbow_memory.py:119 > Pseudo samples: 9984
+[INFO] rainbow_memory.py:125 > Train samples: 10384
+[INFO] rainbow_memory.py:126 > Test samples: 2000
+[INFO] rainbow_memory.py:181 > Task 0 | Epoch 1/1 | train_loss 1.6366 | train_acc 0.3516 | test_loss 1.3882 | test_acc 0.5000 | lr 0.0050
+[INFO] finetune.py:170 > Update memory over 10 classes by uncertainty
+[WARNING] finetune.py:195 > Candidates < Memory size
+[INFO] finetune.py:226 > Memory statistic
+[INFO] finetune.py:228 > 
+deer    209
+dog     191
+Name: klass, dtype: int64
+[INFO] main.py:363 > Train over memory
+[INFO] rainbow_memory.py:117 > Streamed samples: 0
+[INFO] rainbow_memory.py:118 > In-memory samples: 400
+[INFO] rainbow_memory.py:119 > Pseudo samples: 0
+[INFO] rainbow_memory.py:125 > Train samples: 400
+[INFO] rainbow_memory.py:126 > Test samples: 2000
+[INFO] rainbow_memory.py:181 > Task 0 | Epoch 1/5 | train_loss 0.9960 | train_acc 0.5050 | test_loss 0.8321 | test_acc 0.5000 | lr 0.0050
+[INFO] rainbow_memory.py:181 > Task 0 | Epoch 2/5 | train_loss 6.8754 | train_acc 0.4800 | test_loss 78.4465 | test_acc 0.5615 | lr 0.0500
+[INFO] rainbow_memory.py:181 > Task 0 | Epoch 3/5 | train_loss 1.9573 | train_acc 0.4925 | test_loss 19.6343 | test_acc 0.4230 | lr 0.0500
+[INFO] rainbow_memory.py:181 > Task 0 | Epoch 4/5 | train_loss 1.2574 | train_acc 0.4875 | test_loss 7.7882 | test_acc 0.5000 | lr 0.0253
+[INFO] rainbow_memory.py:181 > Task 0 | Epoch 5/5 | train_loss 1.5915 | train_acc 0.5200 | test_loss 1.7856 | test_acc 0.5000 | lr 0.0500
+[INFO] finetune.py:157 > Apply after_task
+[WARNING] finetune.py:233 > Already updated the memory during this iter (0)
+[INFO] main.py:373 > [2-4] Update the information for the current task
+[INFO] finetune.py:157 > Apply after_task
+[WARNING] finetune.py:233 > Already updated the memory during this iter (0)
+[INFO] main.py:380 > [2-5] Report task result
+[INFO] main.py:292 > [2-1] Prepare a datalist for the current task
+[INFO] main.py:324 > [2-2] Set environment for the current task
+[INFO] finetune.py:104 > Apply before_task
+[INFO] finetune.py:146 > Reset the optimizer and scheduler states
+[INFO] finetune.py:152 > Increasing the head of fc 10 -> 10
+[INFO] main.py:332 > [2-3] Start to train under online
+[INFO] main.py:347 > Train over streamed data once
+[INFO] rainbow_memory.py:117 > Streamed samples: 400
+[INFO] rainbow_memory.py:118 > In-memory samples: 400
+[INFO] rainbow_memory.py:119 > Pseudo samples: 9984
+[INFO] rainbow_memory.py:125 > Train samples: 10784
+[INFO] rainbow_memory.py:126 > Test samples: 2000
+[INFO] rainbow_memory.py:181 > Task 1 | Epoch 1/1 | train_loss 1.9494 | train_acc 0.4644 | test_loss 1.5194 | test_acc 0.5170 | lr 0.0050
+[INFO] finetune.py:170 > Update memory over 10 classes by uncertainty
+[INFO] finetune.py:681 > Compute uncertainty by vr_randaug!
